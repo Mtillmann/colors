@@ -202,7 +202,7 @@ Run the scripts in the following order:
 
 ## Acknowledgements
 
-The library is based on my [isit.red](https://isit.red) project and is used in my chrome extension [color helper](...) as well.
+The library is based on my [isit.red](https://isit.red) project and is used in my chrome extension [color helper](https://github.com/Mtillmann/color-helper-extension?tab=readme-ov-file#color-helper-extension) as well.
 
 All of the parsing, conversion and other heavy lifting is done by the great [chroma-js](https://gka.github.io/chroma.js/#chroma) library.
 
