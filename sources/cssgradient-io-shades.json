@@ -1,0 +1,3170 @@
+[
+    {
+      "hex": "#FF00FF",
+      "alias": [
+        "Fuchsia"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FF69B4",
+      "alias": [
+        "Hot Pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FF00BF",
+      "alias": [
+        "Lyft Pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#eec0c8",
+      "alias": [
+        "Palermo Pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FFC0CB",
+      "alias": [
+        "Pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#F9629F",
+      "alias": [
+        "Victoria's Secret Pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FFD700",
+      "alias": [
+        "Gold"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#F0E68C",
+      "alias": [
+        "Khaki"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFC72C",
+      "alias": [
+        "McDonald's Yellow"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FEBE10",
+      "alias": [
+        "Real Madrid Gold"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFFF00",
+      "alias": [
+        "Yellow"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#452c63",
+      "alias": [
+        "Hallmark Purple"
+      ],
+      "shade": [
+        "Purple"
+      ]
+    },
+    {
+      "hex": "#4B0082",
+      "alias": [
+        "Indigo"
+      ],
+      "shade": [
+        "Purple"
+      ]
+    },
+    {
+      "hex": "#E6E6FA",
+      "alias": [
+        "Lavender"
+      ],
+      "shade": [
+        "Purple"
+      ]
+    },
+    {
+      "hex": "#DDA0DD",
+      "alias": [
+        "Plum"
+      ],
+      "shade": [
+        "Purple"
+      ]
+    },
+    {
+      "hex": "#800080",
+      "alias": [
+        "Purple"
+      ],
+      "shade": [
+        "Purple"
+      ]
+    },
+    {
+      "hex": "#33006F",
+      "alias": [
+        "Rockies Purple"
+      ],
+      "shade": [
+        "Purple"
+      ]
+    },
+    {
+      "hex": "#662d91",
+      "alias": [
+        "Roku Purple"
+      ],
+      "shade": [
+        "Purple"
+      ]
+    },
+    {
+      "hex": "#1d1160",
+      "alias": [
+        "Suns Purple"
+      ],
+      "shade": [
+        "Purple"
+      ]
+    },
+    {
+      "hex": "#D8BFD8",
+      "alias": [
+        "Thistle"
+      ],
+      "shade": [
+        "Purple"
+      ]
+    },
+    {
+      "hex": "#EE82EE",
+      "alias": [
+        "Violet"
+      ],
+      "shade": [
+        "Purple"
+      ]
+    },
+    {
+      "hex": "#720e9e",
+      "alias": [
+        "Yahoo Purple"
+      ],
+      "shade": [
+        "Purple"
+      ]
+    },
+    {
+      "hex": "#32de84",
+      "alias": [
+        "Android Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#4B5320",
+      "alias": [
+        "Army Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#8F9779",
+      "alias": [
+        "Artichoke"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#4B6F44",
+      "alias": [
+        "Artichoke Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#87A96B",
+      "alias": [
+        "Asparagus"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#568203",
+      "alias": [
+        "Avocado"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#006A4E",
+      "alias": [
+        "Bottle Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#66FF00",
+      "alias": [
+        "Bright Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#4FFFB0",
+      "alias": [
+        "Bright Mint"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#1B4D3E",
+      "alias": [
+        "Brunswick Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#17B169",
+      "alias": [
+        "Carlsberg Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00563B",
+      "alias": [
+        "Castleton Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#ACE1AF",
+      "alias": [
+        "Celadon"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#018749",
+      "alias": [
+        "Celtic FC Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#7FFF00",
+      "alias": [
+        "Chartreuse"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#1CAC78",
+      "alias": [
+        "Crayola Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#008B8B",
+      "alias": [
+        "Dark Cyan"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#006400",
+      "alias": [
+        "Dark Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#4A5D23",
+      "alias": [
+        "Dark Moss Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#556B2F",
+      "alias": [
+        "Dark Olive Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#03C03C",
+      "alias": [
+        "Dark Pastel Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#8FBC8B",
+      "alias": [
+        "Dark Sea Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00693E",
+      "alias": [
+        "Dartmouth Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#004953",
+      "alias": [
+        "Eagles Midnight Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#50C878",
+      "alias": [
+        "Emerald"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00FF40",
+      "alias": [
+        "Erin"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#4D5D53",
+      "alias": [
+        "Feldgrau"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#71BC78",
+      "alias": [
+        "Fern"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#4F7942",
+      "alias": [
+        "Fern Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#228B22",
+      "alias": [
+        "Forest Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00AB66",
+      "alias": [
+        "GO Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#008000",
+      "alias": [
+        "Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#DADD98",
+      "alias": [
+        "Green Earth"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#ADFF2F",
+      "alias": [
+        "Green Yellow"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#3FFF00",
+      "alias": [
+        "Harlequin"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#008200",
+      "alias": [
+        "Heineken Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#49796B",
+      "alias": [
+        "Hooker's Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#8cc751",
+      "alias": [
+        "HTC Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#355E3B",
+      "alias": [
+        "Hunter Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#138808",
+      "alias": [
+        "India Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#009000",
+      "alias": [
+        "Islamic Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00A86B",
+      "alias": [
+        "Jade"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00573F",
+      "alias": [
+        "Jets Gotham Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#367c2b",
+      "alias": [
+        "John Deere Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#29AB87",
+      "alias": [
+        "Jungle Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#4CBB17",
+      "alias": [
+        "Kelly Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#004526",
+      "alias": [
+        "Lacoste Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#A9BA9D",
+      "alias": [
+        "Laurel Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#7CFC00",
+      "alias": [
+        "Lawn Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#90EE90",
+      "alias": [
+        "Light Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#20B2AA",
+      "alias": [
+        "Light Sea Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00FF00",
+      "alias": [
+        "Lime"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#32CD32",
+      "alias": [
+        "Lime Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#0BDA51",
+      "alias": [
+        "Malachite"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#74C365",
+      "alias": [
+        "Mantis"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#66CDAA",
+      "alias": [
+        "Medium Aquamarine"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#3CB371",
+      "alias": [
+        "Medium Sea Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00FA9A",
+      "alias": [
+        "Medium Spring Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#3EB489",
+      "alias": [
+        "Mint"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#8A9A5B",
+      "alias": [
+        "Moss Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#18453B",
+      "alias": [
+        "MSU Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00A877",
+      "alias": [
+        "Munsell Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#317873",
+      "alias": [
+        "Myrtle Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#009F6B",
+      "alias": [
+        "NCS Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#39FF14",
+      "alias": [
+        "Neon Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#808000",
+      "alias": [
+        "Olive"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#6B8E23",
+      "alias": [
+        "Olive Drab"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#01411C",
+      "alias": [
+        "Pakistan Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#98FB98",
+      "alias": [
+        "Pale Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00AD83",
+      "alias": [
+        "Pantone Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#50C878",
+      "alias": [
+        "Paris Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00A693",
+      "alias": [
+        "Persian Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00A550",
+      "alias": [
+        "Pigment Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#01796F",
+      "alias": [
+        "Pine Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#009900",
+      "alias": [
+        "Recycling Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#6C7C59",
+      "alias": [
+        "Reseda Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#444C38",
+      "alias": [
+        "Rifle Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#679267",
+      "alias": [
+        "Russian Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#043927",
+      "alias": [
+        "Sacramento State Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#76FF7A",
+      "alias": [
+        "Screamin' Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#2E8B57",
+      "alias": [
+        "Sea Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#55DD33",
+      "alias": [
+        "SGBUS Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#009E60",
+      "alias": [
+        "Shamrock Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#009150",
+      "alias": [
+        "Spanish Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#1DB954",
+      "alias": [
+        "Spotify Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#006241",
+      "alias": [
+        "Starbucks Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#40a829",
+      "alias": [
+        "TD Ameritrade"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#D0F0C0",
+      "alias": [
+        "Tea Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#008080",
+      "alias": [
+        "Teal"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00853E",
+      "alias": [
+        "UNT Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#014421",
+      "alias": [
+        "UP Forest Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00674b",
+      "alias": [
+        "Whole Foods Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#9ACD32",
+      "alias": [
+        "Yellow Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#AA0000",
+      "alias": [
+        "49ers Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#fd5c63",
+      "alias": [
+        "Airbnb"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#D2122E",
+      "alias": [
+        "Ajax Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#9e1b32",
+      "alias": [
+        "Alabama Crimson"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E32636",
+      "alias": [
+        "Alizarin Crimson"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E52B50",
+      "alias": [
+        "Amaranth"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF033E",
+      "alias": [
+        "American Rose"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#BA0021",
+      "alias": [
+        "Angels Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FBCEB1",
+      "alias": [
+        "Apricot"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#EF0107",
+      "alias": [
+        "Arsenal Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#A52A2A",
+      "alias": [
+        "Auburn"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#97233F",
+      "alias": [
+        "AZ Cardinals Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#7C0A02",
+      "alias": [
+        "Barn Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#C60C30",
+      "alias": [
+        "Bills Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#660000",
+      "alias": [
+        "Blood Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#CC0000",
+      "alias": [
+        "BU Scarlet"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#800020",
+      "alias": [
+        "Burgundy"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF0800",
+      "alias": [
+        "Candy Apple Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#C41E3A",
+      "alias": [
+        "Cardinal Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#960018",
+      "alias": [
+        "Carmine"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#B31B1B",
+      "alias": [
+        "Carnelian"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#DE3163",
+      "alias": [
+        "Cerise"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E31837",
+      "alias": [
+        "Chiefs Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E23D28",
+      "alias": [
+        "Chili Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#58111A",
+      "alias": [
+        "Chocolate Cosmos"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#C6011F",
+      "alias": [
+        "Cincinnati Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E44D2E",
+      "alias": [
+        "Cinnabar"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#F40009",
+      "alias": [
+        "Coke Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF3800",
+      "alias": [
+        "Coquelicot"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF7F50",
+      "alias": [
+        "Coral"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#B31B1B",
+      "alias": [
+        "Cornell Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#EE204D",
+      "alias": [
+        "Crayola Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#DC143C",
+      "alias": [
+        "Crimson"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#8B0000",
+      "alias": [
+        "Dark Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E9967A",
+      "alias": [
+        "Dark Salmon"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF003F",
+      "alias": [
+        "Electric Crimson"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#a71930",
+      "alias": [
+        "Falcons Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#B22222",
+      "alias": [
+        "Fire Brick"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#CE2029",
+      "alias": [
+        "Fire Engine Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E25822",
+      "alias": [
+        "Flame"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF004F",
+      "alias": [
+        "Folly"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF00FF",
+      "alias": [
+        "Fuschia"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#733635",
+      "alias": [
+        "Garnet"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#A51C30",
+      "alias": [
+        "Harvard Crimson"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#F400A1",
+      "alias": [
+        "Hollywood Cerise"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#e41c38",
+      "alias": [
+        "Husker Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#ED2939",
+      "alias": [
+        "Imperial Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#CD5C5C",
+      "alias": [
+        "Indian Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#CF1020",
+      "alias": [
+        "Lava"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#F08080",
+      "alias": [
+        "Light Coral"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FFA07A",
+      "alias": [
+        "Light Salmon"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#c8102E",
+      "alias": [
+        "Liverpool Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E62020",
+      "alias": [
+        "Lust"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#A50021",
+      "alias": [
+        "Madder"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF0090",
+      "alias": [
+        "Magenta"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#C04000",
+      "alias": [
+        "Mahogany"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#DA291C",
+      "alias": [
+        "Man Utd Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#800000",
+      "alias": [
+        "Maroon"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#C71585",
+      "alias": [
+        "Medium Violet Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#A31F34",
+      "alias": [
+        "MIT Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#F2003C",
+      "alias": [
+        "Munsell Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#AB0003",
+      "alias": [
+        "Nationals Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#C40233",
+      "alias": [
+        "NCS Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#841617",
+      "alias": [
+        "Oklahoma Crimson"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF4500",
+      "alias": [
+        "Orange Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#841617",
+      "alias": [
+        "OU Crimson Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#800020",
+      "alias": [
+        "Oxblood"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#DB7093",
+      "alias": [
+        "Pale Violet Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#ED2939",
+      "alias": [
+        "Pantone Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#990000",
+      "alias": [
+        "Penn Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#C81D11",
+      "alias": [
+        "Persian Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FE28A2",
+      "alias": [
+        "Persian Rose"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E81828",
+      "alias": [
+        "Phillies Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#ED1C24",
+      "alias": [
+        "Pigment Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#e60023",
+      "alias": [
+        "Pinterest Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E30B5C",
+      "alias": [
+        "Raspberry"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF0000",
+      "alias": [
+        "Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#BD3039",
+      "alias": [
+        "Red Sox Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#A45A52",
+      "alias": [
+        "Redwood"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF007F",
+      "alias": [
+        "Rose"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#C21E56",
+      "alias": [
+        "Rose Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#65000B",
+      "alias": [
+        "Rosewood"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#CC0000",
+      "alias": [
+        "Rosso Corsa"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E0115F",
+      "alias": [
+        "Ruby"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#80461B",
+      "alias": [
+        "Russet"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#B7410E",
+      "alias": [
+        "Rust"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#DA2C43",
+      "alias": [
+        "Rusty Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FA8072",
+      "alias": [
+        "Salmon"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#BC3F4A",
+      "alias": [
+        "Sanguine"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF2400",
+      "alias": [
+        "Scarlet"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E60026",
+      "alias": [
+        "Spanish Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#cc0000",
+      "alias": [
+        "Target Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#CD5700",
+      "alias": [
+        "Tawny"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#F88379",
+      "alias": [
+        "Tea Rose"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E2725B",
+      "alias": [
+        "Terra Cotta"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF6347",
+      "alias": [
+        "Tomato"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#A91101",
+      "alias": [
+        "Turkey Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#7C3030",
+      "alias": [
+        "Tuscan Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#C80815",
+      "alias": [
+        "Venetian Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E34234",
+      "alias": [
+        "Vermillion"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#e4181e",
+      "alias": [
+        "Virgin Lust"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#722F37",
+      "alias": [
+        "Wine"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF0000",
+      "alias": [
+        "Youtube Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#7CB9E8",
+      "alias": [
+        "Aero"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00308F",
+      "alias": [
+        "Air Force Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#72A0C1",
+      "alias": [
+        "Air Superiority Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#F0F8FF",
+      "alias": [
+        "Alice Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00FFFF",
+      "alias": [
+        "Aqua"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#7FFFD4",
+      "alias": [
+        "Aquamarine"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#6CB4EE",
+      "alias": [
+        "Argentinan Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#002D62",
+      "alias": [
+        "Astros Navy"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#007FFF",
+      "alias": [
+        "Azure"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#89CFF0",
+      "alias": [
+        "Baby Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0066b2",
+      "alias": [
+        "Bayern Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0000FF",
+      "alias": [
+        "Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#318CE7",
+      "alias": [
+        "Blue De France"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#5072A7",
+      "alias": [
+        "Blue Yonder"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#6699CC",
+      "alias": [
+        "Blue-Gray"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0039a6",
+      "alias": [
+        "Boeing Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#13274F",
+      "alias": [
+        "Braves Navy"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0a2351",
+      "alias": [
+        "Brewers Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#002244",
+      "alias": [
+        "Broncos Navy"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#3457D5",
+      "alias": [
+        "Byzantine Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#5F9EA0",
+      "alias": [
+        "Cadet Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#A3C1AD",
+      "alias": [
+        "Cambridge Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00BFFF",
+      "alias": [
+        "Capri"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#4B9CD3",
+      "alias": [
+        "Carolina Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#B2FFFF",
+      "alias": [
+        "Celeste"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#2a52be",
+      "alias": [
+        "Cerulean"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#034694",
+      "alias": [
+        "Chelsea Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0CAFFF",
+      "alias": [
+        "Chlorine Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0047AB",
+      "alias": [
+        "Cobalt Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#002244",
+      "alias": [
+        "College Navy"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#B9D9EB",
+      "alias": [
+        "Columbia Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#6495ED",
+      "alias": [
+        "Cornflower Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1F75FE",
+      "alias": [
+        "Crayola Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0E3386",
+      "alias": [
+        "Cubs Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00FFFF",
+      "alias": [
+        "Cyan"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#041E42",
+      "alias": [
+        "Dallas Cowboys Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00008B",
+      "alias": [
+        "Dark Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00CED1",
+      "alias": [
+        "Dark Turquoise"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00BFFF",
+      "alias": [
+        "Deep Sky Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1F305E",
+      "alias": [
+        "Delft Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0076CE",
+      "alias": [
+        "Dell Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1560bd",
+      "alias": [
+        "Denim"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1E90FF",
+      "alias": [
+        "Dodger Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#005A9C",
+      "alias": [
+        "Dodgers Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#008E97",
+      "alias": [
+        "Dolphins Aqua"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#007791",
+      "alias": [
+        "Duck Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#012169",
+      "alias": [
+        "Duke Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1034A6",
+      "alias": [
+        "Egyptian Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#7DF9FF",
+      "alias": [
+        "Electric Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#6F00FF",
+      "alias": [
+        "Electric Indigo"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#003399",
+      "alias": [
+        "Everton Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1877F2",
+      "alias": [
+        "Facebook Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#15f4ee",
+      "alias": [
+        "Fluorescent Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#2c3968",
+      "alias": [
+        "Ford Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#073980",
+      "alias": [
+        "General Motors Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#6082B6",
+      "alias": [
+        "Glaucous"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#5D76A9",
+      "alias": [
+        "Grizzlies Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0530ad",
+      "alias": [
+        "IBM Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#99FFFF",
+      "alias": [
+        "Ice Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#4C516D",
+      "alias": [
+        "Independence"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#3F00FF",
+      "alias": [
+        "Indigo"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00416A",
+      "alias": [
+        "Indigo Dye"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0071c5",
+      "alias": [
+        "Intel Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#002fa7",
+      "alias": [
+        "International Klein Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#5A4FCF",
+      "alias": [
+        "Iris"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#004687",
+      "alias": [
+        "KC Royals Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#545AA7",
+      "alias": [
+        "Liberty"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#ADD8E6",
+      "alias": [
+        "Light Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#E0FFFF",
+      "alias": [
+        "Light Cyan"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#87CEFA",
+      "alias": [
+        "Light Sky Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#B0C4DE",
+      "alias": [
+        "Light Steel Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#004792",
+      "alias": [
+        "Lowes Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0077c0",
+      "alias": [
+        "Magic Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#6050DC",
+      "alias": [
+        "Majorelle Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#E1EBEE",
+      "alias": [
+        "Marian Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00538C",
+      "alias": [
+        "Mavericks Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#73C2FB",
+      "alias": [
+        "Maya Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0000CD",
+      "alias": [
+        "Medium Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#7B68EE",
+      "alias": [
+        "Medium Slate Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#48D1CC",
+      "alias": [
+        "Medium Turquoise"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#002D72",
+      "alias": [
+        "Mets Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#191970",
+      "alias": [
+        "Midnight Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#002244",
+      "alias": [
+        "Millenium Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#8DA399",
+      "alias": [
+        "Morning Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0093AF",
+      "alias": [
+        "Munsell Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#000080",
+      "alias": [
+        "Navy"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#4D4DFF",
+      "alias": [
+        "Neon Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#A4DDED",
+      "alias": [
+        "Non-Photo Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#002147",
+      "alias": [
+        "Oxford Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1ca9c9",
+      "alias": [
+        "Pacific Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#AFEEEE",
+      "alias": [
+        "Pale Turquoise"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0018A8",
+      "alias": [
+        "Pantone Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#002244",
+      "alias": [
+        "Patriots Nautical Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#005f69",
+      "alias": [
+        "Peacock Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#011F5B",
+      "alias": [
+        "Penn Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#CCCCFF",
+      "alias": [
+        "Periwinkle"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1C39BB",
+      "alias": [
+        "Persian Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#000f89",
+      "alias": [
+        "Phthalo"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#2E2787",
+      "alias": [
+        "Picotee Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#224C98",
+      "alias": [
+        "Polynesian Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00428c",
+      "alias": [
+        "Porto Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#B0E0E6",
+      "alias": [
+        "Powder Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#003153",
+      "alias": [
+        "Prussian Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#004170",
+      "alias": [
+        "PSG Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#002387",
+      "alias": [
+        "Resolution Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00CCCC",
+      "alias": [
+        "Robin Egg Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#5D8AA8",
+      "alias": [
+        "Royal Air Force Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#4169E1",
+      "alias": [
+        "Royal Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#76ABDF",
+      "alias": [
+        "Ruddy Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#082567",
+      "alias": [
+        "Sapphire"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#4B61D1",
+      "alias": [
+        "Savoy Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#87CEEB",
+      "alias": [
+        "Sky Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#6A5ACD",
+      "alias": [
+        "Slate Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1E2952",
+      "alias": [
+        "Space Cadet"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0070BB",
+      "alias": [
+        "Spanish Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#4682B4",
+      "alias": [
+        "Steel Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#008080",
+      "alias": [
+        "Teal"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#367588",
+      "alias": [
+        "Teal Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#81D8D0",
+      "alias": [
+        "Tiffany Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#132257",
+      "alias": [
+        "Tottenham Navy"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#2D68C4",
+      "alias": [
+        "True Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#3E8EDE",
+      "alias": [
+        "Tufts Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#40E0D0",
+      "alias": [
+        "Turquoise"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1da1f2",
+      "alias": [
+        "Twitter Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#2774AE",
+      "alias": [
+        "UCLA Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#120A8F",
+      "alias": [
+        "Ultramarine"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#AFDBF5",
+      "alias": [
+        "Uranian Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#324AB2",
+      "alias": [
+        "Violet Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1a1f71",
+      "alias": [
+        "Visa Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00CCFF",
+      "alias": [
+        "Vivid Sky Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1D428A",
+      "alias": [
+        "Warriors Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00356B",
+      "alias": [
+        "Yale Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0C2340",
+      "alias": [
+        "Yankees Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#2E5090",
+      "alias": [
+        "YInMn Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    }
+  ]

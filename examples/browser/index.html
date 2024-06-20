@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>browser/umd</title>
+  </head>
+  <body>
+    view source and open the console
+
+    <!-- 
+      it is assumed that a global instance of chroma is
+      available in the browser. Chroma is not bundled
+      with the umd build of the library!
+    -->
+    <script src="node_modules/chroma-js/chroma.js"></script>
+    <script src="node_modules/@mtillmann/colors/dist/umd/colors.js"></script>
+
+    <script>
+      const r = async (url) =>
+        await fetch(`node_modules/@mtillmann/colors/dist/data/${url}`);
+      const text = async (url) => {
+        const resp = await r(url);
+        return await resp.text();
+      };
+      const json = async (url) => {
+        const resp = await r(url);
+        return await resp.json();
+      };
+
+      document.addEventListener("DOMContentLoaded", async () => {
+
+        // collect the data you need to initialize the lookup classes
+        // this may be done in a build step in a real application and not
+        // necessarily in the browser via fetch
+        const binaryLookup = await text("binaryLookup.bin");
+        const colorMap = await json("colorMap.json");
+        const lookupCube = await json("lookupCube.json");
+        const { byteToShadeOffset } = await json("binaryLookupMaps.json");
+
+        const colorLookup = new Colors.ColorLookup(lookupCube, colorMap);
+        const altShadeLookup = new Colors.AltShadeLookup();
+        const shadeLookup = new Colors.ShadeLookup(
+          binaryLookup,
+          byteToShadeOffset
+        );
+
+        console.group("colorLookup");
+        console.info(colorLookup.lookupByRGB(11, 44, 99));
+        console.groupEnd();
+
+        console.group("altShadeLookup");
+        console.info(altShadeLookup.shadeByRGB(11, 44, 99));
+        console.info(altShadeLookup.shadeByRGB(11, 44, 99, true));
+        console.groupEnd();
+
+        console.group("shadeLookup");
+        console.info(shadeLookup.shadeByRGB(11, 44, 99));
+        console.groupEnd();
+      });
+    </script>
+  </body>
+</html>

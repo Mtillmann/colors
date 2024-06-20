@@ -1,0 +1,5825 @@
+[
+    {
+      "hex": "#3D2B1F",
+      "alias": [
+        "Bistre"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#000000",
+      "alias": [
+        "Black"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#3D0C02",
+      "alias": [
+        "Black bean"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#3B3C36",
+      "alias": [
+        "Black olive"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#4B3621",
+      "alias": [
+        "Café noir"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#36454F",
+      "alias": [
+        "Charcoal"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#301934",
+      "alias": [
+        "Dark purple"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#555D50",
+      "alias": [
+        "Ebony"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#1B1B1B",
+      "alias": [
+        "Eerie black"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#343434",
+      "alias": [
+        "Jet"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#1A1110",
+      "alias": [
+        "Licorice"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#191970",
+      "alias": [
+        "Midnight blue"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#111111",
+      "alias": [
+        "Night"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#353839",
+      "alias": [
+        "Onyx"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#414A4C",
+      "alias": [
+        "Outer space"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#242124",
+      "alias": [
+        "Raisin black"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#010B13",
+      "alias": [
+        "Rich black"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#32174D",
+      "alias": [
+        "Russian violet"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#100C08",
+      "alias": [
+        "Smoky black"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#483C32",
+      "alias": [
+        "Taupe"
+      ],
+      "shade": [
+        "Black"
+      ]
+    },
+    {
+      "hex": "#5D8AA8",
+      "alias": [
+        "Air Force blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#72A0C1",
+      "alias": [
+        "Air superiority blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#F0F8FF",
+      "alias": [
+        "Alice Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#6CB4EE",
+      "alias": [
+        "Argentinian Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#007FFF",
+      "alias": [
+        "Azure"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0070BB",
+      "alias": [
+        "Azul"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#89CFF0",
+      "alias": [
+        "Baby blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#003262",
+      "alias": [
+        "Berkeley Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#2072AF",
+      "alias": [
+        "Bice blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#318CE7",
+      "alias": [
+        "Bleu de France"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0000FF",
+      "alias": [
+        "Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#6699CC",
+      "alias": [
+        "Blue-gray"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0095B6",
+      "alias": [
+        "Bondi blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0070FF",
+      "alias": [
+        "Brandeis blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#3457D5",
+      "alias": [
+        "Byzantine blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#A3C1AD",
+      "alias": [
+        "Cambridge blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#7BAFD4",
+      "alias": [
+        "Carolina blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#4997D0",
+      "alias": [
+        "Celestial Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#246BCE",
+      "alias": [
+        "Celtic Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#007BA7",
+      "alias": [
+        "Cerulean"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#468FEA",
+      "alias": [
+        "Chefchaouen Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#3B00DB",
+      "alias": [
+        "Chrysler blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0047AB",
+      "alias": [
+        "Cobalt blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#B9D9EB",
+      "alias": [
+        "Columbia blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#6495ED",
+      "alias": [
+        "Cornflower blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1F75FE",
+      "alias": [
+        "Blue (Crayola)"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0000B8",
+      "alias": [
+        "Dark blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00BFFF",
+      "alias": [
+        "Deep Sky Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1F305E",
+      "alias": [
+        "Delft Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1560BD",
+      "alias": [
+        "Denim"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1E90FF",
+      "alias": [
+        "Dodger blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00009C",
+      "alias": [
+        "Duke blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1034A6",
+      "alias": [
+        "Egyptian blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#16166B",
+      "alias": [
+        "Federal blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#6082B6",
+      "alias": [
+        "Glaucous"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1164B4",
+      "alias": [
+        "Green-blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#6F00FF",
+      "alias": [
+        "Electric indigo"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0072BB",
+      "alias": [
+        "French Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#99FFFF",
+      "alias": [
+        "Ice blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#3f00ff",
+      "alias": [
+        "Indigo"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00416A",
+      "alias": [
+        "Indigo dye"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#002FA7",
+      "alias": [
+        "International Klein Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#8AB9F1",
+      "alias": [
+        "Jordy Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#26619C",
+      "alias": [
+        "Lapis Lazuli"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#ADD8E6",
+      "alias": [
+        "Light blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#87CEFA",
+      "alias": [
+        "Light Sky Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#6050DC",
+      "alias": [
+        "Majorelle Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#2B4593",
+      "alias": [
+        "Marian blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#73C2FB",
+      "alias": [
+        "Maya blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0000CD",
+      "alias": [
+        "Medium blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#7B68EE",
+      "alias": [
+        "Medium slate blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#191970",
+      "alias": [
+        "Midnight blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0093AF",
+      "alias": [
+        "Blue (Munsell)"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#000080",
+      "alias": [
+        "Navy blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0087BD",
+      "alias": [
+        "Blue (NCS)"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#4666FF",
+      "alias": [
+        "Neon blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#A4DDED",
+      "alias": [
+        "Non-photo blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#002147",
+      "alias": [
+        "Oxford Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#273BE2",
+      "alias": [
+        "Palatinate blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#87D3F8",
+      "alias": [
+        "Pale azure"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#011F5B",
+      "alias": [
+        "Penn Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#CCCCFF",
+      "alias": [
+        "Periwinkle"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1C39BB",
+      "alias": [
+        "Persian blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#000f89",
+      "alias": [
+        "Phthalo blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#45B1E8",
+      "alias": [
+        "Picton Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#224C98",
+      "alias": [
+        "Polynesian blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#9EB9D4",
+      "alias": [
+        "Powder blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#003153",
+      "alias": [
+        "Prussian blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#002387",
+      "alias": [
+        "Resolution Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#4169E1",
+      "alias": [
+        "Royal Blue (web color)"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#002366",
+      "alias": [
+        "Royal blue (traditional)"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#76ABDF",
+      "alias": [
+        "Ruddy Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0F52BA",
+      "alias": [
+        "Sapphire"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0076B6",
+      "alias": [
+        "Honolulu Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#4B61D1",
+      "alias": [
+        "Savoy blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#5D89BA",
+      "alias": [
+        "Silver Lake Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#87CEEB",
+      "alias": [
+        "Sky blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#1E2952",
+      "alias": [
+        "Space cadet"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#4682b4",
+      "alias": [
+        "Steel blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0059CF",
+      "alias": [
+        "Tang Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#2D68C4",
+      "alias": [
+        "True Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#3E8EDE",
+      "alias": [
+        "Tufts Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#2774AE",
+      "alias": [
+        "UCLA Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#120A8F",
+      "alias": [
+        "Ultramarine"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#4B92DB",
+      "alias": [
+        "United Nations Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#AFDBF5",
+      "alias": [
+        "Uranian Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#324AB2",
+      "alias": [
+        "Violet-blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#7C9ED9",
+      "alias": [
+        "Vista Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#00356B",
+      "alias": [
+        "Yale Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#2e5090",
+      "alias": [
+        "YInMn Blue"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#0014A8",
+      "alias": [
+        "Zaffre"
+      ],
+      "shade": [
+        "Blue"
+      ]
+    },
+    {
+      "hex": "#A52A2A",
+      "alias": [
+        "Auburn"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#EFDECD",
+      "alias": [
+        "Almond"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#9F8170",
+      "alias": [
+        "Beaver"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#F5F5DC",
+      "alias": [
+        "Beige"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#3D2B1F",
+      "alias": [
+        "Bistre"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#3D0C02",
+      "alias": [
+        "Black bean"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#3B3C36",
+      "alias": [
+        "Black olive"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#79443B",
+      "alias": [
+        "Bole"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#E3DAC9",
+      "alias": [
+        "Bone"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#CD7F32",
+      "alias": [
+        "Bronze"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#993300",
+      "alias": [
+        "Brown"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#AF6E4D",
+      "alias": [
+        "Brown sugar"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#DAA06D",
+      "alias": [
+        "Buff"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#800020",
+      "alias": [
+        "Burgundy"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#E97451",
+      "alias": [
+        "Burnt sienna"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#8A3324",
+      "alias": [
+        "Burnt umber"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#C19A6B",
+      "alias": [
+        "Camel"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#592720",
+      "alias": [
+        "Caput mortuum"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#CC7F3B",
+      "alias": [
+        "Caramel"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#A0785A",
+      "alias": [
+        "Chamoisee"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#954535",
+      "alias": [
+        "Chestnut"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#7B3F00",
+      "alias": [
+        "Chocolate"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#DDD06A",
+      "alias": [
+        "Citron"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#D2691E",
+      "alias": [
+        "Cocoa Brown"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#6F4E37",
+      "alias": [
+        "Coffee"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#B87333",
+      "alias": [
+        "Copper"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#893F45",
+      "alias": [
+        "Cordovan"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#81613E",
+      "alias": [
+        "Coyote"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#EDC9AF",
+      "alias": [
+        "Desert sand"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#4A412A",
+      "alias": [
+        "Drab dark brown"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#DAC8AE",
+      "alias": [
+        "Dun "
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#E1A95F",
+      "alias": [
+        "Earth yellow"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#C2B280",
+      "alias": [
+        "Ecru"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#C19A6B",
+      "alias": [
+        "Fallow"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#E5AA70",
+      "alias": [
+        "Fawn"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#6C541E",
+      "alias": [
+        "Field drab"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#E48400",
+      "alias": [
+        "Fulvous"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#996515",
+      "alias": [
+        "Golden brown"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#DAA520",
+      "alias": [
+        "Goldenrod"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#DA9100",
+      "alias": [
+        "Harvest gold"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#C3B091",
+      "alias": [
+        "Khaki"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#6B4423",
+      "alias": [
+        "Kobicha"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#C19A6B",
+      "alias": [
+        "Lion"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#674C47",
+      "alias": [
+        "Liver"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#C04000",
+      "alias": [
+        "Mahogany"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#800000",
+      "alias": [
+        "Maroon"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#CC7722",
+      "alias": [
+        "Ochre"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#926644",
+      "alias": [
+        "Raw umber"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#A52A2A",
+      "alias": [
+        "Red-brown "
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#A45A52",
+      "alias": [
+        "Redwood"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#A81C07",
+      "alias": [
+        "Rufous"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#80461B",
+      "alias": [
+        "Russet"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#B7410E",
+      "alias": [
+        "Rust"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#C2B280",
+      "alias": [
+        "Sand"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#F4A460",
+      "alias": [
+        "Sandy brown"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#CBA135",
+      "alias": [
+        "Satin sheen gold"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#59260B",
+      "alias": [
+        "Seal brown"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#704214",
+      "alias": [
+        "Sepia"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#882D17",
+      "alias": [
+        "Sienna"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#CB410B",
+      "alias": [
+        "Sinopia"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#D2B48C",
+      "alias": [
+        "Tan"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#483C32",
+      "alias": [
+        "Taupe"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#CD5700",
+      "alias": [
+        "Tawny"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#635147",
+      "alias": [
+        "Umber"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#44362F",
+      "alias": [
+        "Van Dyke"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#5C5248",
+      "alias": [
+        "Walnut brown"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#645452",
+      "alias": [
+        "Wenge"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#F5DEB3",
+      "alias": [
+        "Wheat"
+      ],
+      "shade": [
+        "Brown"
+      ]
+    },
+    {
+      "hex": "#F0F8FF",
+      "alias": [
+        "Alice blue"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#0FFFFF",
+      "alias": [
+        "Aqua"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#7FFFD4",
+      "alias": [
+        "Aquamarine"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#007FFF",
+      "alias": [
+        "Azure"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#F0FFFF",
+      "alias": [
+        "Azure (web) "
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#0D98BA",
+      "alias": [
+        "Blue-green"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#00BFFF",
+      "alias": [
+        "Capri"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#006D6F",
+      "alias": [
+        "Caribbean Current"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#B2FFFF",
+      "alias": [
+        "Celeste"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#007BA7",
+      "alias": [
+        "Cerulean"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#00FFFF",
+      "alias": [
+        "Cyan (RGB)"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#008B8B",
+      "alias": [
+        "Dark cyan"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#7DF9FF",
+      "alias": [
+        "Electric blue"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#15F4EE",
+      "alias": [
+        "Fluorescent cyan"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#29AB87",
+      "alias": [
+        "Jungle green"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#3AB09E",
+      "alias": [
+        "Keppel"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#99FFFF",
+      "alias": [
+        "Ice blue"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#E0FFFF",
+      "alias": [
+        "Light cyan"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#20B2AA",
+      "alias": [
+        "Light sea green"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#DFFFFD",
+      "alias": [
+        "Mint green"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#3EB489",
+      "alias": [
+        "Mint"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#3AA8C1",
+      "alias": [
+        "Moonstone"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#317873",
+      "alias": [
+        "Myrtle Green"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#1CA9C9",
+      "alias": [
+        "Pacific cyan"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#00A693",
+      "alias": [
+        "Persian green"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#01796F",
+      "alias": [
+        "Pine green"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#00B7EB",
+      "alias": [
+        "Process Cyan"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#00CCCC",
+      "alias": [
+        "Robin egg blue"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#2E8B57",
+      "alias": [
+        "Sea green"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#007A74",
+      "alias": [
+        "Skobeloff"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#DFFFFD",
+      "alias": [
+        "Sky blue (Crayola)"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#00FF7F",
+      "alias": [
+        "Spring green"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#008080",
+      "alias": [
+        "Teal"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#81D8D0",
+      "alias": [
+        "Tiffany Blue"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#40E0D0",
+      "alias": [
+        "Turquoise"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#43B3AE",
+      "alias": [
+        "Verdigris"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#00CCFF",
+      "alias": [
+        "Vivid sky blue"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#39A78D",
+      "alias": [
+        "Zomp"
+      ],
+      "shade": [
+        "Cyan"
+      ]
+    },
+    {
+      "hex": "#3DDC84",
+      "alias": [
+        "Android green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#8DB600",
+      "alias": [
+        "Apple green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00FFBF",
+      "alias": [
+        "Aquamarine"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#4B5320",
+      "alias": [
+        "Army"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#7BA05B",
+      "alias": [
+        "Asparagus"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#568203",
+      "alias": [
+        "Avocado"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#66FF00",
+      "alias": [
+        "Bright green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#004225",
+      "alias": [
+        "British racing green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#1B4D3E",
+      "alias": [
+        "Brunswick green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#1E4D2B",
+      "alias": [
+        "Cal Poly green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00563B",
+      "alias": [
+        "Castleton green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#ACE1AF",
+      "alias": [
+        "Celadon"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#80FF00",
+      "alias": [
+        "Chartreuse"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00FFFF",
+      "alias": [
+        "Cyan"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#013220",
+      "alias": [
+        "Dark green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#4A5D23",
+      "alias": [
+        "Dark moss green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#03C03C",
+      "alias": [
+        "Dark pastel green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#177245",
+      "alias": [
+        "Dark spring green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00693E",
+      "alias": [
+        "Dartmouth green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#50C878",
+      "alias": [
+        "Emerald"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00FF40",
+      "alias": [
+        "Erin"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#4F7942",
+      "alias": [
+        "Fern green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#228B22",
+      "alias": [
+        "Forest green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00FF00",
+      "alias": [
+        "Green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#ADFF2F",
+      "alias": [
+        "Green-yellow"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#3FFF00",
+      "alias": [
+        "Harlequin"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#F0FFF0",
+      "alias": [
+        "Honeydew"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#49796B",
+      "alias": [
+        "Hooker's green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#355E3B",
+      "alias": [
+        "Hunter green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#138808",
+      "alias": [
+        "India green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#138808",
+      "alias": [
+        "Islamic green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00A86B",
+      "alias": [
+        "Jade green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#29AB87",
+      "alias": [
+        "Jungle green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#4CBB17",
+      "alias": [
+        "Kelly green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#7CFC00",
+      "alias": [
+        "Lawn green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#90EE90",
+      "alias": [
+        "Light green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#C0FF00",
+      "alias": [
+        "Lime"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#32CD32",
+      "alias": [
+        "Lime green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#0BDA51",
+      "alias": [
+        "Malachite"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#74C365",
+      "alias": [
+        "Mantis"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#004953",
+      "alias": [
+        "Midnight green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#E3F988",
+      "alias": [
+        "Mindaro"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#3EB489",
+      "alias": [
+        "Mint"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#8A9A5B",
+      "alias": [
+        "Moss green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#317873",
+      "alias": [
+        "Myrtle green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#39FF14",
+      "alias": [
+        "Neon green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#008000",
+      "alias": [
+        "Office green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#808000",
+      "alias": [
+        "Olive"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#9AB973",
+      "alias": [
+        "Olivine"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00401A",
+      "alias": [
+        "Pakistan green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#50C878",
+      "alias": [
+        "Paris green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#D1E231",
+      "alias": [
+        "Pear"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00A693",
+      "alias": [
+        "Persian green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00A550",
+      "alias": [
+        "Pigment green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#01796F",
+      "alias": [
+        "Pine green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#93C572",
+      "alias": [
+        "Pistachio"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#6c7c59",
+      "alias": [
+        "Reseda green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00CCCC",
+      "alias": [
+        "Robin egg blue"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#BCB88A",
+      "alias": [
+        "Sage"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#76FF7A",
+      "alias": [
+        "Screamin' green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#2E8B57",
+      "alias": [
+        "Sea green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#55DD33",
+      "alias": [
+        "SGBUS green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#009E60",
+      "alias": [
+        "Shamrock green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#A7FC00",
+      "alias": [
+        "Spring bud"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#00FF7F",
+      "alias": [
+        "Spring green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#D0F0C0",
+      "alias": [
+        "Tea green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#008080",
+      "alias": [
+        "Teal"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#40E0D0",
+      "alias": [
+        "Turquoise"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#40826D",
+      "alias": [
+        "Viridian"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#9ACD32",
+      "alias": [
+        "Yellow-green"
+      ],
+      "shade": [
+        "Green"
+      ]
+    },
+    {
+      "hex": "#F5F5F5",
+      "alias": [
+        "White smoke"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#E5E4E2",
+      "alias": [
+        "Platinum"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#DBD7D2",
+      "alias": [
+        "Timberwolf"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#C0C0C0",
+      "alias": [
+        "Silver"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#BEBFC5",
+      "alias": [
+        "French grey"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#B2BEB5",
+      "alias": [
+        "Ash grey"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#AA98A9",
+      "alias": [
+        "Rose quartz"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#98817B",
+      "alias": [
+        "Cinereous"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#91A3B0",
+      "alias": [
+        "Cadet grey"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#8C92AC",
+      "alias": [
+        "Cool grey"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#8B8589",
+      "alias": [
+        "Taupe grey"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#848482",
+      "alias": [
+        "Battleship grey "
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#808080",
+      "alias": [
+        "Grey"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#708090",
+      "alias": [
+        "Slate grey"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#696969",
+      "alias": [
+        "Dim grey"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#555555",
+      "alias": [
+        "Davy's grey"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#536878",
+      "alias": [
+        "Payne's grey"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#536267",
+      "alias": [
+        "Gunmetal"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#4D5D53",
+      "alias": [
+        "Feldgrau"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#2F4F4F",
+      "alias": [
+        "Dark slate grey"
+      ],
+      "shade": [
+        "Grey"
+      ]
+    },
+    {
+      "hex": "#CA1F7B",
+      "alias": [
+        "Magenta dye"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#FF0090",
+      "alias": [
+        "Magenta (CMYK)"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#FF00FF",
+      "alias": [
+        "Magenta (RGB)"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#F653A6",
+      "alias": [
+        "Magenta (Crayola)"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#EE82EE",
+      "alias": [
+        "Violet (web color)"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#FC0FC0",
+      "alias": [
+        "Shocking pink"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#FF6FFF",
+      "alias": [
+        "Shocking pink (Crayola)"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#D0417E",
+      "alias": [
+        "Magenta (Pantone)"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#AB274F",
+      "alias": [
+        "Amaranth purple"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#FF33CC",
+      "alias": [
+        "Razzle dazzle rose"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#FF1DCE",
+      "alias": [
+        "Hot magenta"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#FE4EDA",
+      "alias": [
+        "Purple pizzazz"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#DA70D6",
+      "alias": [
+        "Orchid"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#CF3476",
+      "alias": [
+        "Telemagenta"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#CF71AF",
+      "alias": [
+        "Sky magenta"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#CC33CC",
+      "alias": [
+        "Steel pink"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#9F4576",
+      "alias": [
+        "Magenta haze"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#8E3A59",
+      "alias": [
+        "Quinacridone magenta"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#843179",
+      "alias": [
+        "Plum"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#8B008B",
+      "alias": [
+        "Dark Magenta"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#AA98A9",
+      "alias": [
+        "Rose quartz"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#B284BE",
+      "alias": [
+        "African Violet"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#563C5C",
+      "alias": [
+        "English Violet"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#856088",
+      "alias": [
+        "Chinese Violet"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#5B3256",
+      "alias": [
+        "Violet (JTC)"
+      ],
+      "shade": [
+        "Magenta"
+      ]
+    },
+    {
+      "hex": "#FF4F00",
+      "alias": [
+        "Aerospace orange "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#C46210",
+      "alias": [
+        "Alloy orange "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FBCEB1",
+      "alias": [
+        "Apricot "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FF9966",
+      "alias": [
+        "Atomic tangerine "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#964B00",
+      "alias": [
+        "Brown "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#BF5700",
+      "alias": [
+        "Burnt orange "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#E09540",
+      "alias": [
+        "Butterscotch "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#ED9121",
+      "alias": [
+        "Carrot orange "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#F7E7CE",
+      "alias": [
+        "Champagne (color) "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FF7F50",
+      "alias": [
+        "Coral "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FF8C00",
+      "alias": [
+        "Dark orange (web) "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#EDC9AF",
+      "alias": [
+        "Desert sand (color) "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#BA160C",
+      "alias": [
+        "Engineering orange "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FE5A1D",
+      "alias": [
+        "Giants orange "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#F04A00",
+      "alias": [
+        "Golden Gate Bridge "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#DAA520",
+      "alias": [
+        "Goldenrod "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#E8AC41",
+      "alias": [
+        "Hunyadi yellow "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FED8B1",
+      "alias": [
+        "Light orange "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FF7538",
+      "alias": [
+        "Orange (Crayola) "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FF5800",
+      "alias": [
+        "Orange (Pantone) "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FFA000",
+      "alias": [
+        "Orange peel "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FFA500",
+      "alias": [
+        "Orange (web) "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FF8000",
+      "alias": [
+        "Orange (wheel) "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FFEFD5",
+      "alias": [
+        "Papaya whip "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FFE5B4",
+      "alias": [
+        "Peach "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#D99058",
+      "alias": [
+        "Persian orange "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#EC5800",
+      "alias": [
+        "Persimmon "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FF8F00",
+      "alias": [
+        "Princeton orange "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FF7518",
+      "alias": [
+        "Pumpkin "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FF7900",
+      "alias": [
+        "Safety orange "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#F4C430",
+      "alias": [
+        "Saffron "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#E86100",
+      "alias": [
+        "Spanish orange "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#F94D00",
+      "alias": [
+        "Tangelo"
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#F28500",
+      "alias": [
+        "Tangerine "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#CD5700",
+      "alias": [
+        "Tawny"
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#B56917",
+      "alias": [
+        "Tiger’s Eye "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#FF8200",
+      "alias": [
+        "UT orange "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#F1B42F",
+      "alias": [
+        "Xanthous "
+      ],
+      "shade": [
+        "Orange"
+      ]
+    },
+    {
+      "hex": "#E52B50",
+      "alias": [
+        "Amaranth"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#F19CBB",
+      "alias": [
+        "Amaranth pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FF91AF",
+      "alias": [
+        "Baker-Miller pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#DE5D83",
+      "alias": [
+        "Blush "
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#F653A6",
+      "alias": [
+        "Brilliant rose"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FB607F",
+      "alias": [
+        "Brink pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FFA6C9",
+      "alias": [
+        "Carnation pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#DE3163",
+      "alias": [
+        "Cerise"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#F1DDCF",
+      "alias": [
+        "Champagne pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FFB7C5",
+      "alias": [
+        "Cherry blossom pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#A8516E",
+      "alias": [
+        "China rose "
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#F88379",
+      "alias": [
+        "Coral pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#893F45",
+      "alias": [
+        "Cordovan"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#F56FA1",
+      "alias": [
+        "Cyclamen"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FF1493",
+      "alias": [
+        "Deep pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#D71868",
+      "alias": [
+        "Dogwood rose"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#F2C1D1",
+      "alias": [
+        "Fairy Tale "
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#F64A8A",
+      "alias": [
+        "French rose"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FF00FF",
+      "alias": [
+        "Fuchsia "
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#C74375",
+      "alias": [
+        "Fuchsia rose"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FF004F",
+      "alias": [
+        "Folly"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#DF73FF",
+      "alias": [
+        "Heliotrope"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#F400A1",
+      "alias": [
+        "Hollywood cerise"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FF00CC",
+      "alias": [
+        "Hot magenta"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FF69B4",
+      "alias": [
+        "Hot pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FFF0F5",
+      "alias": [
+        "Lavender blush"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FBAED2",
+      "alias": [
+        "Lavender pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FF0090",
+      "alias": [
+        "Magenta"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#E4007C",
+      "alias": [
+        "Mexican pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FFDAE9",
+      "alias": [
+        "Mimi Pink "
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FFE4E1",
+      "alias": [
+        "Misty rose"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#997A8D",
+      "alias": [
+        "Mountbatten pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#C08081",
+      "alias": [
+        "Old rose"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#F2BDCD",
+      "alias": [
+        "Orchid pink "
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#EDCDC2",
+      "alias": [
+        "Pale Dogwood "
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FFCBA4",
+      "alias": [
+        "Peach "
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FE28A2",
+      "alias": [
+        "Persian rose"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#F77FBE",
+      "alias": [
+        "Persian pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#DF00FF",
+      "alias": [
+        "Phlox"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FFCBDB",
+      "alias": [
+        "Pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#CC8899",
+      "alias": [
+        "Puce"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#E30B5C",
+      "alias": [
+        "Raspberry "
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FF33CC",
+      "alias": [
+        "Razzle dazzle rose"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#E3256B",
+      "alias": [
+        "Razzmatazz"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#C71585",
+      "alias": [
+        "Red-violet "
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#B3446C",
+      "alias": [
+        "Raspberry rose"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FF0080",
+      "alias": [
+        "Rose"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#F9429E",
+      "alias": [
+        "Rose Bonbon"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#674846",
+      "alias": [
+        "Rose ebony"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FF66CC",
+      "alias": [
+        "Rose pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#AA98A9",
+      "alias": [
+        "Rose quartz"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#C21E56",
+      "alias": [
+        "Rose red"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#905D5D",
+      "alias": [
+        "Rose taupe"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#AB4E52",
+      "alias": [
+        "Rose vale"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#65000B",
+      "alias": [
+        "Rosewood"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#BC8F8F",
+      "alias": [
+        "Rosy brown"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FF91A4",
+      "alias": [
+        "Salmon pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FFF5EE",
+      "alias": [
+        "Seashell"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FC0FC0",
+      "alias": [
+        "Shocking pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#F4C2C2",
+      "alias": [
+        "Tea rose"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FC89AC",
+      "alias": [
+        "Tickle me pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#CF3476",
+      "alias": [
+        "Telemagenta"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#DE6FA1",
+      "alias": [
+        "Thulian pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#FF6FFF",
+      "alias": [
+        "Ultra pink"
+      ],
+      "shade": [
+        "Pink"
+      ]
+    },
+    {
+      "hex": "#B284BE",
+      "alias": [
+        "African violet"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#9966CC",
+      "alias": [
+        "Amethyst"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#8A2BE2",
+      "alias": [
+        "Blue-violet"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#702963",
+      "alias": [
+        "Byzantium"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#592720",
+      "alias": [
+        "Caput mortuum"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#856088",
+      "alias": [
+        "Chinese violet"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#301934",
+      "alias": [
+        "Dark purple"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#9400D3",
+      "alias": [
+        "Dark violet"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#614051",
+      "alias": [
+        "Eggplant"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#6F00FF",
+      "alias": [
+        "Electric indigo"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#BF00FF",
+      "alias": [
+        "Electric purple"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#8F00FF",
+      "alias": [
+        "Electric violet"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#563C5C",
+      "alias": [
+        "English violet"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#6C3082",
+      "alias": [
+        "Eminence"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#F2C1D1",
+      "alias": [
+        "Fairy Tale"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#B53389",
+      "alias": [
+        "Fandango"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#D473D4",
+      "alias": [
+        "French mauve"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#8806CE",
+      "alias": [
+        "French violet"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#6F2DA8",
+      "alias": [
+        "Grape"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#DF73FF",
+      "alias": [
+        "Heliotrope"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#3f00ff",
+      "alias": [
+        "Indigo"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#5A4FCF",
+      "alias": [
+        "Iris"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#5B3256",
+      "alias": [
+        "Japanese violet"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#FFF0F5",
+      "alias": [
+        "Lavender blush"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#B57EDC",
+      "alias": [
+        "Lavender (floral)"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#E6E6FA",
+      "alias": [
+        "Lavender (web)"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#C8A2C8",
+      "alias": [
+        "Lilac"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#880085",
+      "alias": [
+        "Mardi Gras"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#E0B0FF",
+      "alias": [
+        "Mauve"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#7B68EE",
+      "alias": [
+        "Medium slate blue"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#997A8D",
+      "alias": [
+        "Mountbatten pink"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#C54B8C",
+      "alias": [
+        "Mulberry"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#DA70D6",
+      "alias": [
+        "Orchid"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#682860",
+      "alias": [
+        "Palatinate"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#FAE6FA",
+      "alias": [
+        "Pale purple"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#CCCCFF",
+      "alias": [
+        "Periwinkle"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#DF00FF",
+      "alias": [
+        "Phlox"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#DBB2D1",
+      "alias": [
+        "Pink lavender "
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#DDA0DD",
+      "alias": [
+        "Plum (web)"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#86608E",
+      "alias": [
+        "Pomp and Power"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#CC8899",
+      "alias": [
+        "Puce"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#800080",
+      "alias": [
+        "Purple"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#9A4EAE",
+      "alias": [
+        "Purpureus"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#663399",
+      "alias": [
+        "Rebecca purple"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#7851A9",
+      "alias": [
+        "Royal purple"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#C71585",
+      "alias": [
+        "Red-violet"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#32174D",
+      "alias": [
+        "Russian violet"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#6A5ACD",
+      "alias": [
+        "Slate blue"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#CC33CC",
+      "alias": [
+        "Steel pink"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#512888",
+      "alias": [
+        "Tekhelet"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#D8BFD8",
+      "alias": [
+        "Thistle"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#9683EC",
+      "alias": [
+        "Tropical indigo"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#66023C",
+      "alias": [
+        "Tyrian purple"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#645394",
+      "alias": [
+        "Ultra Violet "
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#A020F0",
+      "alias": [
+        "Veronica "
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#8000FF",
+      "alias": [
+        "Violet"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#C9A0DC",
+      "alias": [
+        "Wisteria"
+      ],
+      "shade": [
+        "Violet"
+      ]
+    },
+    {
+      "hex": "#AB274F",
+      "alias": [
+        "Amaranth purple"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#7C0902",
+      "alias": [
+        "Barn red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FE6F5E",
+      "alias": [
+        "Bittersweet"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#BF4F51",
+      "alias": [
+        "Bittersweet shimmer"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#660000",
+      "alias": [
+        "Blood red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FB607F",
+      "alias": [
+        "Bright pink (Crayola)"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#800020",
+      "alias": [
+        "Burgundy"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF0800",
+      "alias": [
+        "Candy apple red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FDBCB4",
+      "alias": [
+        "Cantaloupe melon"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#C51E3A",
+      "alias": [
+        "Cardinal"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#960018",
+      "alias": [
+        "Carmine"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#DE3163",
+      "alias": [
+        "Cerise"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E23D28",
+      "alias": [
+        "Chili red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#58111A",
+      "alias": [
+        "Chocolate cosmos"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E44D2E",
+      "alias": [
+        "Cinnabar"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF3800",
+      "alias": [
+        "Coquelicot"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#F88379",
+      "alias": [
+        "Coral pink"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#893F45",
+      "alias": [
+        "Cordovan"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#B31B1B",
+      "alias": [
+        "Cornell red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#DC143C",
+      "alias": [
+        "Crimson"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#8B0000",
+      "alias": [
+        "Dark red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#B22222",
+      "alias": [
+        "Fire brick"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#CE2029",
+      "alias": [
+        "Fire engine red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF004F",
+      "alias": [
+        "Folly"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#733635",
+      "alias": [
+        "Garnet"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#ED2939",
+      "alias": [
+        "Imperial red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#CD5C5C",
+      "alias": [
+        "Indian red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#D05340",
+      "alias": [
+        "Jasper"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#F08080",
+      "alias": [
+        "Light coral"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF7F7F",
+      "alias": [
+        "Light red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#A50021",
+      "alias": [
+        "Madder"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#C04000",
+      "alias": [
+        "Mahogany"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#800000",
+      "alias": [
+        "Maroon"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FFE4E1",
+      "alias": [
+        "Misty rose"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FE0000",
+      "alias": [
+        "Off-red (RGB)"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#C08081",
+      "alias": [
+        "Old rose"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#841617",
+      "alias": [
+        "OU crimson"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#990000",
+      "alias": [
+        "Penn red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#CC3333",
+      "alias": [
+        "Persian red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FFC0CB",
+      "alias": [
+        "Pink"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF0000",
+      "alias": [
+        "Red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#A52A2A",
+      "alias": [
+        "Red-brown "
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#ED1B24",
+      "alias": [
+        "Red (CMYK) (pigment red)"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#EE204E",
+      "alias": [
+        "Red (Crayola)"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#F2003C",
+      "alias": [
+        "Red (Munsell)"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#C40234",
+      "alias": [
+        "Red (NCS)"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#ED2839",
+      "alias": [
+        "Red (Pantone)"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#AB4E52",
+      "alias": [
+        "Redwood"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E60026",
+      "alias": [
+        "Rojo"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#674846",
+      "alias": [
+        "Rose ebony"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#C21E56",
+      "alias": [
+        "Rose red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#905D5D",
+      "alias": [
+        "Rose taupe"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#AB4E52",
+      "alias": [
+        "Rose vale"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#65000B",
+      "alias": [
+        "Rosewood"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#BC8F8F",
+      "alias": [
+        "Rosy brown"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#B7410E",
+      "alias": [
+        "Rust"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#DA2C43",
+      "alias": [
+        "Rusty red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FA8072",
+      "alias": [
+        "Salmon"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF91A4",
+      "alias": [
+        "Salmon pink"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF2400",
+      "alias": [
+        "Scarlet"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#D44500",
+      "alias": [
+        "Syracuse red-orange"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#F4C2C2",
+      "alias": [
+        "Tea rose (red)"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#FF6347",
+      "alias": [
+        "Tomato"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#A91101",
+      "alias": [
+        "Turkey red"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#E34234",
+      "alias": [
+        "Vermilion"
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#722F37",
+      "alias": [
+        "Wine "
+      ],
+      "shade": [
+        "Red"
+      ]
+    },
+    {
+      "hex": "#EDEAE0",
+      "alias": [
+        "Alabaster"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F0F8FF",
+      "alias": [
+        "Alice blue"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F2F3F4",
+      "alias": [
+        "Anti-flash white"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FAEBD7",
+      "alias": [
+        "Antique white"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F0FFFF",
+      "alias": [
+        "Azure white"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FEFEFA",
+      "alias": [
+        "Baby powder"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F5F5DC",
+      "alias": [
+        "Beige"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#E3DAC9",
+      "alias": [
+        "Bone"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F7E7CE",
+      "alias": [
+        "Champagne"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFF8DC",
+      "alias": [
+        "Cornsilk "
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFF8E7",
+      "alias": [
+        "Cosmic latte"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFFDD0",
+      "alias": [
+        "Cream"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#EFDFBB",
+      "alias": [
+        "Dutch white"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F0EAD6",
+      "alias": [
+        "Eggshell"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#EEDC82",
+      "alias": [
+        "Flax"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFFAF0",
+      "alias": [
+        "Floral white"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F8F8FF",
+      "alias": [
+        "Ghost white"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F0FFF0",
+      "alias": [
+        "Honeydew"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F4F0EC",
+      "alias": [
+        "Isabelline "
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFFFF0",
+      "alias": [
+        "Ivory"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFF0F5",
+      "alias": [
+        "Lavender blush"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFFACD",
+      "alias": [
+        "Lemon chiffon"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FAF0E6",
+      "alias": [
+        "Linen"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F8F4FF",
+      "alias": [
+        "Magnolia"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F5FFFA",
+      "alias": [
+        "Mint cream"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFE4E1",
+      "alias": [
+        "Misty rose"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFDEAD",
+      "alias": [
+        "Navajo white "
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#E9FFDB",
+      "alias": [
+        "Nyanza"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FDF5E6",
+      "alias": [
+        "Old lace"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFEFD5",
+      "alias": [
+        "Papaya whip"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F1E9D2",
+      "alias": [
+        "Parchment"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFE5B4",
+      "alias": [
+        "Peach"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#EAE0C8",
+      "alias": [
+        "Pearl "
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#E5E4E2",
+      "alias": [
+        "Platinum"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F7F7F7",
+      "alias": [
+        "Seasalt"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFF5EE",
+      "alias": [
+        "Seashell"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFFAFA",
+      "alias": [
+        "Snow "
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F3E5AB",
+      "alias": [
+        "Vanilla"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFFFFF",
+      "alias": [
+        "White"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#F5F5F5",
+      "alias": [
+        "White smoke"
+      ],
+      "shade": [
+        "White"
+      ]
+    },
+    {
+      "hex": "#FFBF00",
+      "alias": [
+        "Amber"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FBCEB1",
+      "alias": [
+        "Apricot"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#E9D66B",
+      "alias": [
+        "Arylide yellow"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FDEE00",
+      "alias": [
+        "Aureolin"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#F5F5DC",
+      "alias": [
+        "Beige"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#E0AB76",
+      "alias": [
+        "Buff"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFEF00",
+      "alias": [
+        "Canary"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#F7E7CE",
+      "alias": [
+        "Champagne"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#DFFF00",
+      "alias": [
+        "Chartreuse"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#DDD06A",
+      "alias": [
+        "Citron"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#E4D00A",
+      "alias": [
+        "Citrine"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFF8E7",
+      "alias": [
+        "Cosmic latte"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFFDD0",
+      "alias": [
+        "Cream"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#B8860B",
+      "alias": [
+        "Dark goldenrod"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#CDB280",
+      "alias": [
+        "Ecru"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#EEDC82",
+      "alias": [
+        "Flax"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#EF9B0F",
+      "alias": [
+        "Gamboge"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFD700",
+      "alias": [
+        "Gold"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#D4AF37",
+      "alias": [
+        "Gold (metallic)"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#DAA520",
+      "alias": [
+        "Goldenrod"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#E6A817",
+      "alias": [
+        "Harvest gold"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FCF75E",
+      "alias": [
+        "Icterine"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFFFF0",
+      "alias": [
+        "Ivory"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#F8DE7E",
+      "alias": [
+        "Jasmine"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FACA16",
+      "alias": [
+        "Jonquil"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#C3B091",
+      "alias": [
+        "Khaki"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFFACD",
+      "alias": [
+        "Lemon chiffon"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#E3FF00",
+      "alias": [
+        "Lemon-lime "
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFFFE0",
+      "alias": [
+        "Light yellow"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#C19A6B",
+      "alias": [
+        "Lion"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FBEC5D",
+      "alias": [
+        "Maize"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFC40C",
+      "alias": [
+        "Mikado yellow"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#E3F988",
+      "alias": [
+        "Mindaro"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFDB58",
+      "alias": [
+        "Mustard"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FADA5E",
+      "alias": [
+        "Naples yellow"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFDEAD",
+      "alias": [
+        "Navajo white"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#CFB53B",
+      "alias": [
+        "Old gold"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFEFD5",
+      "alias": [
+        "Papaya whip"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FADFAD",
+      "alias": [
+        "Peach-yellow"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#D1E231",
+      "alias": [
+        "Pear"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#F4C431",
+      "alias": [
+        "Saffron"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#ffd800",
+      "alias": [
+        "School bus yellow"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFBA00",
+      "alias": [
+        "Selective yellow"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FADA5E",
+      "alias": [
+        "Stil de grain yellow"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#E4D96F",
+      "alias": [
+        "Straw"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFCC33",
+      "alias": [
+        "Sunglow"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FAD6A5",
+      "alias": [
+        "Sunset"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#F3E5AB",
+      "alias": [
+        "Vanilla"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#F5DEB3",
+      "alias": [
+        "Wheat"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    },
+    {
+      "hex": "#FFFF00",
+      "alias": [
+        "Yellow"
+      ],
+      "shade": [
+        "Yellow"
+      ]
+    }
+  ]

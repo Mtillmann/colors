@@ -1,0 +1,17 @@
+{
+  "name": "node-esm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "Martin Tillmann",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@mtillmann/colors": "../../",
+    "chroma-js": "^2.4.2"
+  }
+}
