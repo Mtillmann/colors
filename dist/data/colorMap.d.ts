@@ -1,0 +1,17 @@
+declare const _default: {
+    [key: string]: {
+        r: number;
+        g: number;
+        b: number;
+        alias: string[];
+        source: string;
+        hex: string;
+        L: number;
+        A: number;
+        B: number;
+        shade: string[];
+        altShade: string;
+    };
+};
+
+export { _default as default };
