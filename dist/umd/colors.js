@@ -1,14 +1,11 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('chroma-js')) :
-  typeof define === 'function' && define.amd ? define(['exports', 'chroma-js'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.Colors = {}, global.chroma));
-})(this, (function (exports, chroma2) { 'use strict';
-
-  function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-  var chroma2__default = /*#__PURE__*/_interopDefaultLegacy(chroma2);
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+  typeof define === 'function' && define.amd ? define(['exports'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.Colors = {}));
+})(this, (function (exports) { 'use strict';
 
   // src/AltShadeLookup.ts
+
   var AltShadeLookup_default = class {
     shadeMap = {
       Black: "Black",
@@ -154,7 +151,7 @@
       return this.shadeByHSL(h, s, l, includeNativeShade);
     }
     shadeByRGB(r, g, b, includeNativeShade = false) {
-      return this.shade(chroma2__default["default"](r, g, b), includeNativeShade);
+      return this.shade(chroma(r, g, b), includeNativeShade);
     }
     shadeByHSL(h, s, l, includeNativeShade = false) {
       if (s > 1) {
@@ -1219,6 +1216,9 @@
       return "Black";
     }
   };
+
+  // src/ColorLookup.ts
+
   var ColorLookup = class {
     colorMap;
     lookupCube;
@@ -1240,7 +1240,7 @@
     cachedChromaByRGB(r, g, b) {
       const key = `${r}_${g}_${b}`;
       if (!this.chromaCache.has(key)) {
-        this.chromaCache.set(key, chroma2__default["default"](r, g, b));
+        this.chromaCache.set(key, chroma(r, g, b));
       }
       return this.chromaCache.get(key);
     }
@@ -1282,9 +1282,9 @@
       let colors = [];
       for (const color of foundColors) {
         const actualColor = this.colorMap[color];
-        const deltaE = chroma2__default["default"].deltaE(
-          chroma2__default["default"].lab(givenLAB[0], givenLAB[1], givenLAB[2]),
-          chroma2__default["default"].lab(
+        const deltaE = chroma.deltaE(
+          chroma.lab(givenLAB[0], givenLAB[1], givenLAB[2]),
+          chroma.lab(
             actualColor.L,
             actualColor.A,
             actualColor.B
@@ -1333,7 +1333,7 @@
       altShadeList.sort((a, b2) => b2[1] - a[1]);
       const givenHex = givenColor.hex();
       colors = colors.map((c) => {
-        c.euclideanDistance = chroma2__default["default"].distance(c.hex, givenHex, "rgb");
+        c.euclideanDistance = chroma.distance(c.hex, givenHex, "rgb");
         return c;
       });
       this.lookupCache.set(cacheKey, {

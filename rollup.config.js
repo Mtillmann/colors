@@ -1,5 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
+import externalGlobals from "rollup-plugin-external-globals";
+
 
 const config = {
     input: 'dist/index.js',
@@ -9,21 +11,27 @@ const config = {
         name: 'Colors',
         exports: 'named',
         globals: {
-            'chroma-js': 'chroma'
+           // 'chroma-js': 'chroma'
         }
     },
-    plugins: [
+    plugins: [        
     ],
     external: [
-        'chroma-js'
+        //'chroma-js'
     ]
 };
 
 const configs = [structuredClone(config), structuredClone(config)];
 
-configs[0].plugins.push(resolve());
+configs[0].plugins.push(resolve(),  externalGlobals({
+    'chroma-js': 'chroma'
+  }));
+
 
 configs[1].output.file = 'dist/umd/colors.min.js';
-configs[1].plugins.push(resolve(), terser());
+configs[1].plugins.push(resolve(), terser(),  externalGlobals({
+    'chroma-js': 'chroma'
+  }));
+
 
 export default configs;
