@@ -1,3 +1,5 @@
+![tests](https://github.com/Mtillmann/chapters/actions/workflows/tests.yaml/badge.svg?event=push) 
+
 # Colors
 
 Library to look up color names and shades
