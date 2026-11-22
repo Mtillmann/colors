@@ -1,8 +1,19 @@
-import { Color } from 'chroma-js';
+/** anything with an rgb() method, e.g. a chroma-js Color */
+interface RgbLike {
+    rgb: () => number[];
+}
+declare function rgbToLab(r: number, g: number, b: number): [number, number, number];
+/** CIEDE2000 (Kl = Kc = Kh = 1), same formulation as chroma.deltaE */
+declare function deltaE2000(L1: number, a1: number, b1: number, L2: number, a2: number, b2: number): number;
+/** same as chroma(r, g, b).hsl(): h in degrees (NaN for greys), s and l in 0..1 */
+declare function rgbToHsl(r: number, g: number, b: number): [number, number, number];
 
 declare class export_default{
     shadeMap: Record<string, string>;
-    shade(chromaInstance: Color, includeNativeShade?: boolean): [string, string] | string;
+    /** accepts anything with an rgb() method; uses hsl() directly when available (e.g. a chroma-js Color) */
+    shade(color: RgbLike & {
+        hsl?: () => number[];
+    }, includeNativeShade?: boolean): [string, string] | string;
     shadeByRGB(r: number, g: number, b: number, includeNativeShade?: boolean): [string, string] | string;
     shadeByHSL(h: number, s: number, l: number, includeNativeShade?: boolean): [string, string] | string;
     private find;
@@ -54,9 +65,7 @@ declare class ColorLookup {
     };
     constructor(lookupCube: LookupCube, colorMap: ColorMap, options?: {});
     /** accepts anything with an rgb() method, e.g. a chroma-js Color */
-    lookup(color: {
-        rgb: () => number[];
-    }, maxResults?: number): any;
+    lookup(color: RgbLike, maxResults?: number): any;
     /** hex keys of all colors in the cells within `radius` of cell (R, G, B) */
     private candidates;
     lookupByRGB(r: number, g: number, b: number, maxResults?: number): any;
@@ -68,9 +77,9 @@ declare class ShadeLookup {
     edgeLength: number;
     byteToShadeMap: Record<string, string>;
     constructor(binaryLookup: string, byteToShadeMap: Record<string, string>);
-    shade(color: Color): string;
+    shade(color: RgbLike): string;
     shadeByRGB(r: number, g: number, b: number): string;
-    shades(color: Color, searchCubeEdgeLength?: number): Array<[string, number]>;
+    shades(color: RgbLike, searchCubeEdgeLength?: number): Array<[string, number]>;
     shadesByRGB(r: number, g: number, b: number, searchCubeEdgeLength?: number): Array<[string, number]>;
 }
 
@@ -89,17 +98,11 @@ declare class NearestColorLookup {
     };
     constructor(colorMap: ColorMap, options?: {});
     /** accepts anything with an rgb() method, e.g. a chroma-js Color */
-    lookup(color: {
-        rgb: () => number[];
-    }, maxResults?: number): LookupResult;
+    lookup(color: RgbLike, maxResults?: number): LookupResult;
     lookupByRGB(r: number, g: number, b: number, maxResults?: number): LookupResult;
     /** shade of the exact nearest named color */
     shadeByRGB(r: number, g: number, b: number): string;
     static hex(r: number, g: number, b: number): string;
 }
 
-declare function rgbToLab(r: number, g: number, b: number): [number, number, number];
-/** CIEDE2000 (Kl = Kc = Kh = 1), same formulation as chroma.deltaE */
-declare function deltaE2000(L1: number, a1: number, b1: number, L2: number, a2: number, b2: number): number;
-
-export { export_default as AltShadeLookup, ColorLookup, NearestColorLookup, ShadeLookup, deltaE2000, rgbToLab };
+export { export_default as AltShadeLookup, ColorLookup, NearestColorLookup, ShadeLookup, deltaE2000, rgbToHsl, rgbToLab };

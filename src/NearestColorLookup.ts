@@ -1,7 +1,7 @@
 import { type ColorMap } from './types/ColorMap'
 import type { SimpleColor } from './types/SimpleColor'
 import type { LookupResult } from './types/LookupResult'
-import { deltaE2000, rgbDistance, rgbToHex, rgbToLab } from './colorMath'
+import { deltaE2000, rgbDistance, rgbToHex, rgbToLab, type RgbLike } from './colorMath'
 
 /**
  * Exact nearest named color lookup without dependencies.
@@ -32,7 +32,7 @@ export default class NearestColorLookup {
   }
 
   /** accepts anything with an rgb() method, e.g. a chroma-js Color */
-  lookup (color: { rgb: () => number[] }, maxResults: number = 1): LookupResult {
+  lookup (color: RgbLike, maxResults: number = 1): LookupResult {
     const [r, g, b] = color.rgb()
     return this.lookupByRGB(r, g, b, maxResults)
   }

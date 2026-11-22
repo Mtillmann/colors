@@ -1,5 +1,8 @@
 // Dependency-free color math, numerically identical to chroma-js 2.4 (rgb->lab, deltaE CIEDE2000, hsl).
 
+/** anything with an rgb() method, e.g. a chroma-js Color */
+export interface RgbLike { rgb: () => number[] }
+
 // chroma-js LAB_CONSTANTS (D65)
 const Xn = 0.950470
 const Yn = 1
@@ -80,4 +83,28 @@ export function rgbToHex (r: number, g: number, b: number): string {
 
 export function rgbDistance (r1: number, g1: number, b1: number, r2: number, g2: number, b2: number): number {
   return Math.sqrt((r1 - r2) ** 2 + (g1 - g2) ** 2 + (b1 - b2) ** 2)
+}
+
+/** same as chroma(r, g, b).hsl(): h in degrees (NaN for greys), s and l in 0..1 */
+export function rgbToHsl (r: number, g: number, b: number): [number, number, number] {
+  // chroma clamps channels to 0..255
+  r = Math.min(255, Math.max(0, r)) / 255
+  g = Math.min(255, Math.max(0, g)) / 255
+  b = Math.min(255, Math.max(0, b)) / 255
+  const min = Math.min(r, g, b)
+  const max = Math.max(r, g, b)
+  const l = (max + min) / 2
+  let s: number
+  let h = Number.NaN
+  if (max === min) {
+    s = 0
+  } else {
+    s = l < 0.5 ? (max - min) / (max + min) : (max - min) / (2 - max - min)
+    if (r === max) h = (g - b) / (max - min)
+    else if (g === max) h = 2 + (b - r) / (max - min)
+    else h = 4 + (r - g) / (max - min)
+    h *= 60
+    if (h < 0) h += 360
+  }
+  return [h, s, l]
 }

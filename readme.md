@@ -13,7 +13,9 @@ npm i @mtillmann/colors
 The package contains an ESM version and can be regularly imported.
 There is also an UMD version for buildless environments in the `dist/umd` folder.
 
-The UMD version's classes exist inside a global `Colors` namespace-object. When using the UMD version you also have to provide global `chroma-js`.
+The UMD version's classes exist inside a global `Colors` namespace-object.
+
+The library has no runtime dependencies. Methods that take a color object accept anything with an `rgb()` method, e.g. a [chroma-js](https://gka.github.io/chroma.js/) instance.
 
 In any case you must provide the (included) data to the library class constructors!
 
@@ -142,6 +144,7 @@ The library ships its own dependency-free color math, numerically identical to c
 
 - `rgbToLab(r, g, b): [L, a, b]` - sRGB (D65) to CIELAB
 - `deltaE2000(L1, a1, b1, L2, a2, b2): number` - CIEDE2000 color difference
+- `rgbToHsl(r, g, b): [h, s, l]` - same as chroma's `hsl()` (hue is `NaN` for greys)
 
 ## `ShadeLookup` - Look up Color Shades
 
@@ -163,11 +166,11 @@ The `searchCubeEdgeLength` parameter defines the size of the cube that is search
 
 ### `shade(color: Color): string`
 
-Same as `shadeByRGB` but takes a `chroma`-instance (`Color`) as input.
+Same as `shadeByRGB` but takes any object with an `rgb()` method (e.g. a `chroma`-instance) as input.
 
 ### `shades(color: Color, searchCubeEdgeLength: number = 3): [string, number][]`
 
-Same as `shadesByRGB` but takes a `chroma`-instance (`Color`) as input.
+Same as `shadesByRGB` but takes any object with an `rgb()` method (e.g. a `chroma`-instance) as input.
 
 ### Example
 
@@ -213,7 +216,7 @@ Same as `shadeByHSL` but takes RGB color values as input.
 
 ### `shade(color: Color, includeNativeShade: Boolean = false): [string, string] | string`
 
-Same as `shadeByHSL` but takes a `chroma`-instance (`Color`) as input.
+Same as `shadeByHSL` but takes any object with an `rgb()` method as input. If the object also has an `hsl()` method (e.g. a `chroma`-instance), that is used directly.
 
 ### Example
 
@@ -243,7 +246,7 @@ Run the scripts in the following order:
 
 ## Benchmark
 
-`node benchmarks/compare.mjs [count]` (after `npm run build`) compares the lookups against an exact brute-force search on random colors. `benchmarks/original-index.js` is the build of the previous `ColorLookup` implementation, kept as a baseline. Results for 2000 colors:
+`node benchmarks/compare.mjs [count]` (after `npm run build`) compares the lookups against an exact brute-force search on random colors. `benchmarks/original-index.js` is the build of the previous implementation, kept as a baseline. `node benchmarks/check-altshade.mjs` verifies that the dependency-free `AltShadeLookup` returns exactly the same results as the previous chroma-based one. Results for 2000 colors:
 
 |                                    | previous `ColorLookup` | `ColorLookup` | `NearestColorLookup` | `ShadeLookup` |
 |------------------------------------|------------------------|---------------|----------------------|---------------|
@@ -256,6 +259,6 @@ Run the scripts in the following order:
 
 The library is based on my [isit.red](https://isit.red) project and is used in my chrome extension [color helper](https://github.com/Mtillmann/color-helper-extension?tab=readme-ov-file#color-helper-extension) as well.
 
-All of the parsing, conversion and other heavy lifting is done by the great [chroma-js](https://gka.github.io/chroma.js/#chroma) library.
+The color math is ported from the great [chroma-js](https://gka.github.io/chroma.js/#chroma) library, which is still used by the data generation scripts (dev dependency).
 
 Color names and shades are sourced from wikipedia and used with permission from [cssgradient.io](https://cssgradient.io/color-shades/).

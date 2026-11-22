@@ -2,7 +2,7 @@ import { type ColorMap } from './types/ColorMap'
 import { type LookupCube } from './types/LookupCube'
 import type { SimpleColor } from './types/SimpleColor'
 import type { LookupResult } from './types/LookupResult'
-import { deltaE2000, rgbDistance, rgbToLab } from './colorMath'
+import { deltaE2000, rgbDistance, rgbToLab, type RgbLike } from './colorMath'
 
 /**
  * Grid-accelerated named color lookup.
@@ -30,7 +30,7 @@ export default class ColorLookup {
   }
 
   /** accepts anything with an rgb() method, e.g. a chroma-js Color */
-  lookup (color: { rgb: () => number[] }, maxResults?: number): any {
+  lookup (color: RgbLike, maxResults?: number): any {
     const rgb = color.rgb()
     return this.lookupByRGB(rgb[0], rgb[1], rgb[2], maxResults)
   }

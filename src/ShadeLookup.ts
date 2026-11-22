@@ -1,4 +1,4 @@
-import type { Color } from 'chroma-js'
+import type { RgbLike } from './colorMath'
 
 export default class ShadeLookup {
   binaryLookup: string
@@ -12,8 +12,9 @@ export default class ShadeLookup {
     this.byteToShadeMap = byteToShadeMap
   }
 
-  shade (color: Color): string {
-    return this.shadeByRGB(...color.rgb())
+  shade (color: RgbLike): string {
+    const [r, g, b] = color.rgb()
+    return this.shadeByRGB(r, g, b)
   }
 
   shadeByRGB (r: number, g: number, b: number): string {
@@ -25,8 +26,9 @@ export default class ShadeLookup {
     return this.byteToShadeMap[this.binaryLookup[p].charCodeAt(0)]
   }
 
-  shades (color: Color, searchCubeEdgeLength: number = 3): Array<[string, number]> {
-    return this.shadesByRGB(...color.rgb(), searchCubeEdgeLength)
+  shades (color: RgbLike, searchCubeEdgeLength: number = 3): Array<[string, number]> {
+    const [r, g, b] = color.rgb()
+    return this.shadesByRGB(r, g, b, searchCubeEdgeLength)
   }
 
   shadesByRGB (r: number, g: number, b: number, searchCubeEdgeLength: number = 3): Array<[string, number]> {

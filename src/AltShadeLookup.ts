@@ -1,5 +1,4 @@
-import { type Color } from 'chroma-js'
-import chroma from 'chroma-js'
+import { rgbToHsl, type RgbLike } from './colorMath'
 
 export default class {
   shadeMap: Record<string, string> = {
@@ -140,11 +139,12 @@ export default class {
     'Light Yellowish Brown': 'Yellow'
   }
 
+  /** accepts anything with an rgb() method; uses hsl() directly when available (e.g. a chroma-js Color) */
   shade (
-    chromaInstance: Color,
+    color: RgbLike & { hsl?: () => number[] },
     includeNativeShade: boolean = false
   ): [string, string] | string {
-    const [h, s, l]: [number, number, number] = chromaInstance.hsl()
+    const [h, s, l] = typeof color.hsl === 'function' ? color.hsl() : rgbToHsl(...(color.rgb() as [number, number, number]))
     return this.shadeByHSL(h, s, l, includeNativeShade)
   }
 
@@ -154,7 +154,8 @@ export default class {
     b: number,
     includeNativeShade: boolean = false
   ): [string, string] | string {
-    return this.shade(chroma(r, g, b), includeNativeShade)
+    const [h, s, l] = rgbToHsl(r, g, b)
+    return this.shadeByHSL(h, s, l, includeNativeShade)
   }
 
   shadeByHSL (
