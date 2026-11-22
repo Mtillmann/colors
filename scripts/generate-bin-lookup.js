@@ -6,8 +6,10 @@ import { fileURLToPath } from 'url';
 import { ColorLookup } from "../dist/index.js";
 import chroma from 'chroma-js';
 
-import colorMap from '../src/data/colorMap.json' assert { type: 'json' };
-import lookupCube from '../src/data/lookupCube.json' assert { type: 'json' };
+import { datasetSuffix } from './dataset.js';
+
+const colorMap = JSON.parse(fs.readFileSync(new URL(`../src/data/colorMap${datasetSuffix}.json`, import.meta.url)));
+const lookupCube = JSON.parse(fs.readFileSync(new URL(`../src/data/lookupCube${datasetSuffix}.json`, import.meta.url)));
 
 let cl = new ColorLookup(lookupCube, colorMap);
 
@@ -52,14 +54,14 @@ for (r = 0; r < l; r++) {
 
 const reverseMap = JSON.stringify(Object.fromEntries(Object.entries(map).map(([k, v]) => [v, k]))).replace(/"(\d+)"/g, '$1');
 
-fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + '/../src/data/binaryLookupMaps.ts', `
+fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + `/../src/data/binaryLookupMaps${datasetSuffix}.ts`, `
 export const shadeToByte: Record<string, number> = ${JSON.stringify(map)};
 export const byteToShadeOffset: Record<number, string> = ${reverseMap};
 export const byteToShadeNormal: string[] = ${JSON.stringify(Object.keys(map))};
 export const offset: number = ${startAt};`);
 
 
-fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + '/../src/data/binaryLookupMaps.json', JSON.stringify({
+fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + `/../src/data/binaryLookupMaps${datasetSuffix}.json`, JSON.stringify({
     shadeToByte: map,
     byteToShadeOffset: Object.fromEntries(Object.entries(map).map(([k, v]) => [v, k])),
     byteToShadeNormal: Object.keys(map),
@@ -69,5 +71,5 @@ fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + '/../src/data/binaryL
 
 
 
-fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + '/../src/data/binaryLookup.bin', binString);
-fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + '/../src/data/binaryLookup.ts', `export default '${binString}'`);
+fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + `/../src/data/binaryLookup${datasetSuffix}.bin`, binString);
+fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + `/../src/data/binaryLookup${datasetSuffix}.ts`, `export default '${binString}'`);

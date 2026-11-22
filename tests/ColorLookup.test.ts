@@ -9,7 +9,7 @@ describe('ColorLookup', () => {
     const colorsAndShades: [number[], string, string][] = [
         [[0,124,201], 'Blue', 'Dark Blue'],
         [[201,26,140], 'Pink', 'Purple Red'],
-        [[255,172,89], 'Brown', 'Light Red-Orange'],
+        [[255,172,89], 'Orange', 'Light Red-Orange'], // was 'Brown' before the xkcd survey blend
         [[5,255,122], 'Cyan', 'Spring Green'],
         [[255,155,255], 'Light Magenta', 'Magenta'],
     ];

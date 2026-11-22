@@ -6,9 +6,16 @@ import wikipedia_shades from '../sources/wikipedia-shades.json' assert { type: '
 import fs from 'fs';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { AltShadeLookup } from "../dist/index.js";
+import { AltShadeLookup, rgbToLab, deltaE2000 } from "../dist/index.js";
 import { unquoteKeys }from './util.js';
+import { inferShades } from './shade-inference.js';
+import { datasetSuffix, isExtended } from './dataset.js';
 import chroma from "chroma-js";
+
+const hexToLab = hex => {
+    const n = parseInt(hex.slice(1), 16);
+    return rgbToLab(n >> 16, (n >> 8) & 255, n & 255);
+};
 
 
 let output = wikipedia_colors_with_aliases;
@@ -55,6 +62,38 @@ for (let shade of cssgradient_io_shades) {
     output[hex].source = 'cssgradient';
 }
 
+// extended dataset: add the "best of" names from color-name-list (meodai/color-names, MIT).
+// Names that already exist are skipped, names for practically identical colors (deltaE < 1)
+// become aliases of the existing color, everything else is added as a new color.
+if (isExtended) {
+    const bestof = JSON.parse(fs.readFileSync(new URL('../sources/color-name-list-bestof.json', import.meta.url)));
+    const knownNames = new Set(Object.values(output).flatMap(c => c.alias.map(a => a.toLowerCase())));
+    const native = Object.keys(output).map(hex => ({ hex, lab: hexToLab(hex) }));
+    let added = 0, aliased = 0, skipped = 0;
+    for (const entry of bestof) {
+        const name = entry.alias[0];
+        if (knownNames.has(name.toLowerCase())) { skipped++; continue; }
+        const lab = hexToLab(entry.hex);
+        let closest = null, closestDE = Infinity;
+        for (const c of native) {
+            const d = deltaE2000(lab[0], lab[1], lab[2], c.lab[0], c.lab[1], c.lab[2]);
+            if (d < closestDE) { closestDE = d; closest = c.hex; }
+        }
+        if (closestDE < 1) {
+            output[closest].alias.push(name);
+            aliased++;
+        } else if (entry.hex in output) {
+            output[entry.hex].alias.push(name);
+            aliased++;
+        } else {
+            output[entry.hex] = { alias: [name], source: 'color-name-list' };
+            added++;
+        }
+        knownNames.add(name.toLowerCase());
+    }
+    console.log(`color-name-list: ${added} added, ${aliased} as aliases, ${skipped} skipped (name exists)`);
+}
+
 //patch rgb vvalues
 for (const hex in output) {
     output[hex].hex = hex;
@@ -82,44 +121,19 @@ for (const hex in output) {
 // closest labelled colors. This must run BEFORE the light/dark step below, otherwise
 // inferred colors would copy their neighbour's "Light"/"Dark" prefix instead of
 // getting one from their own lightness.
-const deltaEThreshold = 50;
+// the 5 closest human-labelled colors and the xkcd survey vote; a close runner-up becomes a second shade
+// xkcd color survey votes (sources/xkcd-survey-shades.json) are blended in 50/50
+const survey = JSON.parse(fs.readFileSync(new URL('../sources/xkcd-survey-shades.json', import.meta.url)));
+const labelled = Object.keys(output)
+    .filter(hex => 'shade' in output[hex])
+    .map(hex => ({ lab: hexToLab(hex), shades: output[hex].shade }));
 
 for (const hex in output) {
     if (!('shade' in output[hex])) {
-        for (const hex2 in output) {
-            if (!('shade' in output[hex2])) {
-                continue;
-            }
-            const deltaE = chroma.deltaE(hex, hex2);
-            if (deltaE > deltaEThreshold) {
-                continue;
-            }
-
-            if (!('deltaes' in output[hex])) {
-                output[hex].deltaes = {};
-            }
-
-
-            const shade = output[hex2].shade[0];
-            if (shade in output[hex].deltaes) {
-                output[hex].deltaes[shade] = Math.min(output[hex].deltaes[shade], deltaE);
-            } else {
-                output[hex].deltaes[shade] = deltaE;
-            }
-        }
-    }
-}
-
-for (const hex in output) {
-    if (!('shade' in output[hex])) {
-
-        let shades = Object.entries(output[hex].deltaes);
-        shades.sort((a, b) => a[1] - b[1])
-
-        output[hex].shade = [shades[0][0]];
+        const n = parseInt(hex.slice(1), 16);
+        const rgb = [n >> 16, (n >> 8) & 255, n & 255];
+        output[hex].shade = inferShades(hexToLab(hex), labelled, { secondRatio: 0.7, survey, rgb, surveyWeight: 0.5 }).shades;
         output[hex].inferredShade = true;
-        delete output[hex].deltaes;
-
     }
 }
 
@@ -233,5 +247,5 @@ const opt = JSON.stringify(output);
 
 
 
-fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + '/../src/data/colorMap.json', opt);
-fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + '/../src/data/colorMap.ts', `export default ${unquoteKeys(opt)}`);
+fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + `/../src/data/colorMap${datasetSuffix}.json`, opt);
+fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + `/../src/data/colorMap${datasetSuffix}.ts`, `export default ${unquoteKeys(opt)}`);

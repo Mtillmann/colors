@@ -4,7 +4,9 @@ import fs from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import { unquoteKeys } from "./util.js";
-import colors from '../src/data/colorMap.json' assert {type : 'json'};
+import { datasetSuffix } from './dataset.js';
+
+const colors = JSON.parse(fs.readFileSync(new URL(`../src/data/colorMap${datasetSuffix}.json`, import.meta.url)));
 
 const edgeLength = parseInt(process.argv[2] || 8);
 const allowdEdgeLengths = [2, 4, 8, 16, 32, 64, 128];
@@ -85,5 +87,5 @@ map = newChunks;
 
 const opt = JSON.stringify(map)
 
-fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + '/../src/data/lookupCube.json', opt);
-fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + '/../src/data/lookupCube.ts', `export default ${unquoteKeys(opt)};`);
+fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + `/../src/data/lookupCube${datasetSuffix}.json`, opt);
+fs.writeFileSync(dirname(fileURLToPath(import.meta.url)) + `/../src/data/lookupCube${datasetSuffix}.ts`, `export default ${unquoteKeys(opt)};`);

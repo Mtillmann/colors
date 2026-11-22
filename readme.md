@@ -21,6 +21,36 @@ In any case you must provide the (included) data to the library class constructo
 
 > The `examples` folder contains a simple example of how to use the library in a browser environment and a node environment.
 
+## Datasets
+
+Two datasets ship in `dist/data`. All classes take the data as constructor arguments, so you pick one by import:
+
+| dataset | files | colors / names | size |
+|---|---|---|---|
+| native | `colorMap.js`, `lookupCube.js`, `binaryLookup.js`, `binaryLookupMaps.js` | 1124 / 1310 | ~0.5 MB |
+| extended | `colorMap.extended.js`, `lookupCube.extended.js`, `binaryLookup.extended.js`, `binaryLookupMaps.extended.js` | 5387 / 6047 | ~1.5 MB |
+
+The extended dataset adds the "best of" list of [color-name-list](https://github.com/meodai/color-names) (MIT). New names are only added when the name is unknown; names for practically identical colors (deltaE < 1) become aliases of the existing color. Closest names are much closer (median deltaE 1.8 instead of 3.0), but most shades of the added colors are inferred, see below.
+
+```es6
+import colorMap from "@mtillmann/colors/dist/data/colorMap.extended.js";
+import lookupCube from "@mtillmann/colors/dist/data/lookupCube.extended.js";
+const colorLookup = new ColorLookup(lookupCube, colorMap);
+```
+
+### Shades
+
+689 colors carry human shade labels from the Wikipedia "shades of" lists and cssgradient.io. These labels are used as they are.
+
+All other colors (435 in the native, ~4700 in the extended dataset) get an inferred shade. Two sources are blended 50/50:
+
+- **closest labelled colors**: the 5 closest human-labelled colors vote (closer colors count more)
+- **xkcd color survey**: the 2010 [xkcd color survey](https://blog.xkcd.com/2010/05/03/color-survey-results/) asked ~150,000 people to name random colors. The answers of participants who are not colorblind and not flagged as spam (~2.1 million) were mapped to the 14 base shades and counted per region of the RGB cube (16×16×16 cells, 210-589 answers each). This distilled data ships in `sources/xkcd-survey-shades.json` and is only used to generate the datasets, not at runtime.
+
+The human labels are clustered in some parts of the color space (for random colors the closest label is more than deltaE 5 away in ~21% of cases), while the survey covers every region of the RGB cube. Blending both keeps the agreement with the Wikipedia labels (~85%) and raises the agreement with what people actually call a color from ~68% to ~83% (measured against a held-out half of the survey participants).
+
+If the runner-up shade reaches 70% of the winner's score, it is added as a second shade (`shade: ["Pink", "Magenta"]`), because people genuinely disagree there: in ~29% of the color space less than 60% of the survey participants used the same shade. "Light"/"Dark" prefixes are derived from each color's own lightness.
+
 ## `ColorLookup` - Look up Color Names
 
 This class provides a way to look up color names and shades for any given color. It uses a large generated color map and a cubic lookup data structure to find the closest matching color names and shades. The quality (i.e. likeness) of the matches is measured by the [deltaE](https://en.wikipedia.org/wiki/Color_difference#CIELAB_%CE%94E*) (CIEDE2000).
@@ -241,12 +271,16 @@ Run the scripts in the following order:
 1. `npm run build` - run the build to create js files that can be used by node
 2. `node scripts/generate-color-map.js` - generates the color map from the source data
 3. `node scripts/generate-lookup-cube.js` - generates the lookup cube from the color map
-4. `node scripts/generate-binary-lookup.js` - generates the binary lookup and some metadata from the color map
+4. `node scripts/generate-bin-lookup.js` - generates the binary lookup and some metadata from the color map
 5. `npm run build` - run the build again to include the generated data in the dist folder
+
+For the extended dataset run `node scripts/import-color-name-list.js path/to/colornames.csv` once, then steps 2-5 with `DATASET=extended` set.
+
+`sources/xkcd-survey-shades.json` (survey votes per RGB cell) is used by step 2 for the shade inference.
 
 ## Benchmark
 
-`node benchmarks/compare.mjs [count]` (after `npm run build`) compares the lookups against an exact brute-force search on random colors. `benchmarks/original-index.js` is the build of the previous implementation, kept as a baseline. `node benchmarks/check-altshade.mjs` verifies that the dependency-free `AltShadeLookup` returns exactly the same results as the previous chroma-based one. Results for 2000 colors:
+`node benchmarks/compare.mjs [count]` (after `npm run build`) compares the lookups against an exact brute-force search on random colors. `benchmarks/original-index.js` is the build of the previous implementation, kept as a baseline. `node benchmarks/datasets.mjs` compares the shade inference and the native vs. extended dataset. `node benchmarks/check-altshade.mjs` verifies that the dependency-free `AltShadeLookup` returns exactly the same results as the previous chroma-based one. Results for 2000 colors:
 
 |                                    | previous `ColorLookup` | `ColorLookup` | `NearestColorLookup` | `ShadeLookup` |
 |------------------------------------|------------------------|---------------|----------------------|---------------|
@@ -256,6 +290,11 @@ Run the scripts in the following order:
 | correct shade                      | 87%                    | 99%           | 100%                 | 95%           |
 
 ## Acknowledgements
+
+Shade inference uses distilled data from the [xkcd color survey](https://blog.xkcd.com/2010/05/03/color-survey-results/) by Randall Munroe.
+
+The extended dataset uses names from [color-name-list](https://github.com/meodai/color-names) by David Aerne and contributors (MIT license).
+
 
 The library is based on my [isit.red](https://isit.red) project and is used in my chrome extension [color helper](https://github.com/Mtillmann/color-helper-extension?tab=readme-ov-file#color-helper-extension) as well.
 
