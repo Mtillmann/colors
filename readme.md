@@ -276,7 +276,7 @@ Run the scripts in the following order:
 
 For the extended dataset run `node scripts/import-color-name-list.js path/to/colornames.csv` once, then steps 2-5 with `DATASET=extended` set.
 
-`sources/xkcd-survey-shades.json` (survey votes per RGB cell) is used by step 2 for the shade inference.
+`sources/xkcd-survey-shades.json` (survey votes per RGB cell) is used by step 2 for the shade inference. It is generated from the raw xkcd survey dump (not included, ~300 MB) with the Python scripts in `scripts/survey/` (standard library only): `load_dump.py` imports the dump into SQLite, `distill.py` maps the answers to shades and counts them per cell, `compare.py` compares the dataset's shades with the survey.
 
 ## Benchmark
 
