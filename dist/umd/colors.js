@@ -1217,12 +1217,80 @@
     }
   };
 
-  // src/ColorLookup.ts
+  // src/colorMath.ts
+  var Xn = 0.95047;
+  var Yn = 1;
+  var Zn = 1.08883;
+  var t0 = 0.137931034;
+  var t2 = 0.12841855;
+  var t3 = 8856452e-9;
+  function rgbToXyzChannel(c) {
+    c /= 255;
+    return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+  }
+  function xyzToLabChannel(t) {
+    return t > t3 ? Math.pow(t, 1 / 3) : t / t2 + t0;
+  }
+  function rgbToLab(r, g, b) {
+    const R = rgbToXyzChannel(r);
+    const G = rgbToXyzChannel(g);
+    const B = rgbToXyzChannel(b);
+    const x = xyzToLabChannel((0.4124564 * R + 0.3575761 * G + 0.1804375 * B) / Xn);
+    const y = xyzToLabChannel((0.2126729 * R + 0.7151522 * G + 0.072175 * B) / Yn);
+    const z = xyzToLabChannel((0.0193339 * R + 0.119192 * G + 0.9503041 * B) / Zn);
+    const L = 116 * y - 16;
+    return [L < 0 ? 0 : L, 500 * (x - y), 200 * (y - z)];
+  }
+  var RAD2DEG = 180 / Math.PI;
+  var DEG2RAD = Math.PI / 180;
+  var POW25_7 = Math.pow(25, 7);
+  function deltaE2000(L1, a1, b1, L2, a2, b2) {
+    const avgL = (L1 + L2) / 2;
+    const C1 = Math.sqrt(a1 * a1 + b1 * b1);
+    const C2 = Math.sqrt(a2 * a2 + b2 * b2);
+    const avgC7 = Math.pow((C1 + C2) / 2, 7);
+    const G = 0.5 * (1 - Math.sqrt(avgC7 / (avgC7 + POW25_7)));
+    const a1p = a1 * (1 + G);
+    const a2p = a2 * (1 + G);
+    const C1p = Math.sqrt(a1p * a1p + b1 * b1);
+    const C2p = Math.sqrt(a2p * a2p + b2 * b2);
+    const avgCp = (C1p + C2p) / 2;
+    const arctan1 = Math.atan2(b1, a1p) * RAD2DEG;
+    const arctan2 = Math.atan2(b2, a2p) * RAD2DEG;
+    const h1p = arctan1 >= 0 ? arctan1 : arctan1 + 360;
+    const h2p = arctan2 >= 0 ? arctan2 : arctan2 + 360;
+    const avgHp = Math.abs(h1p - h2p) > 180 ? (h1p + h2p + 360) / 2 : (h1p + h2p) / 2;
+    const T = 1 - 0.17 * Math.cos((avgHp - 30) * DEG2RAD) + 0.24 * Math.cos(2 * avgHp * DEG2RAD) + 0.32 * Math.cos((3 * avgHp + 6) * DEG2RAD) - 0.2 * Math.cos((4 * avgHp - 63) * DEG2RAD);
+    let deltaHp = h2p - h1p;
+    deltaHp = Math.abs(deltaHp) <= 180 ? deltaHp : h2p <= h1p ? deltaHp + 360 : deltaHp - 360;
+    deltaHp = 2 * Math.sqrt(C1p * C2p) * Math.sin(deltaHp * DEG2RAD / 2);
+    const deltaL = L2 - L1;
+    const deltaCp = C2p - C1p;
+    const l50 = (avgL - 50) * (avgL - 50);
+    const sl = 1 + 0.015 * l50 / Math.sqrt(20 + l50);
+    const sc = 1 + 0.045 * avgCp;
+    const sh = 1 + 0.015 * avgCp * T;
+    const dTheta = 30 * Math.exp(-Math.pow((avgHp - 275) / 25, 2));
+    const avgCp7 = Math.pow(avgCp, 7);
+    const Rc = 2 * Math.sqrt(avgCp7 / (avgCp7 + POW25_7));
+    const Rt = -Rc * Math.sin(2 * dTheta * DEG2RAD);
+    const l = deltaL / sl;
+    const c = deltaCp / sc;
+    const h = deltaHp / sh;
+    const result = Math.sqrt(l * l + c * c + h * h + Rt * c * h);
+    return Math.max(0, Math.min(100, result));
+  }
+  function rgbToHex(r, g, b) {
+    return "#" + (1 << 24 | Math.round(r) << 16 | Math.round(g) << 8 | Math.round(b)).toString(16).slice(1);
+  }
+  function rgbDistance(r1, g1, b1, r2, g2, b2) {
+    return Math.sqrt((r1 - r2) ** 2 + (g1 - g2) ** 2 + (b1 - b2) ** 2);
+  }
 
+  // src/ColorLookup.ts
   var ColorLookup = class {
     colorMap;
     lookupCube;
-    chromaCache = /* @__PURE__ */ new Map();
     lookupCache = /* @__PURE__ */ new Map();
     downsampleFactor = 0;
     options = {
@@ -1237,113 +1305,75 @@
         ...options
       };
     }
-    cachedChromaByRGB(r, g, b) {
-      const key = `${r}_${g}_${b}`;
-      if (!this.chromaCache.has(key)) {
-        this.chromaCache.set(key, chroma(r, g, b));
-      }
-      return this.chromaCache.get(key);
-    }
-    getClosest(list, index, length) {
-      return [
-        list[index],
-        list.slice(0, index).reverse().filter((i) => i !== null)[0],
-        list.slice(index + 1, length).filter((i) => i !== null)[0]
-      ].filter((i) => i !== void 0 && i !== null);
-    }
+    /** accepts anything with an rgb() method, e.g. a chroma-js Color */
     lookup(color, maxResults) {
       const rgb = color.rgb();
       return this.lookupByRGB(rgb[0], rgb[1], rgb[2], maxResults);
+    }
+    /** hex keys of all colors in the cells within `radius` of cell (R, G, B) */
+    candidates(R, G, B, radius) {
+      const size = this.lookupCube.length;
+      const found = [];
+      for (let x = Math.max(0, R - radius); x <= Math.min(size - 1, R + radius); x++) {
+        for (let y = Math.max(0, G - radius); y <= Math.min(size - 1, G + radius); y++) {
+          for (let z = Math.max(0, B - radius); z <= Math.min(size - 1, B + radius); z++) {
+            const cell = this.lookupCube[x][y][z];
+            if (cell !== null && cell !== void 0) found.push(...cell);
+          }
+        }
+      }
+      return found;
     }
     lookupByRGB(r, g, b, maxResults) {
       r = ~~r;
       g = ~~g;
       b = ~~b;
       const cacheKey = `${r}_${g}_${b}`;
-      if (this.lookupCache.has(cacheKey)) {
-        return this.lookupCache.get(cacheKey);
+      const cached = this.lookupCache.get(cacheKey);
+      if (cached !== void 0) {
+        return cached;
       }
       const R = Math.floor(r / this.downsampleFactor);
       const G = Math.floor(g / this.downsampleFactor);
       const B = Math.floor(b / this.downsampleFactor);
-      const L = this.lookupCube.length;
-      const givenColor = this.cachedChromaByRGB(r, g, b);
-      const givenLAB = givenColor.lab();
-      const foundColors = [];
-      this.getClosest(this.lookupCube, R, L).forEach((gList) => {
-        this.getClosest(gList, G, L).forEach((bList) => {
-          const values = this.getClosest(bList, B, L);
-          if (values !== null) {
-            foundColors.push(...[].concat(...values));
-          }
-        });
+      const [gL, gA, gB] = rgbToLab(r, g, b);
+      let found = [];
+      for (let radius = 1; found.length === 0 && radius < this.lookupCube.length; radius++) {
+        found = this.candidates(R, G, B, radius);
+      }
+      const ranked = found.map((hex) => {
+        const c = this.colorMap[hex];
+        return { ...c, deltaE: deltaE2000(gL, gA, gB, c.L, c.A, c.B) };
       });
-      let fallBackColors = [];
-      let colors = [];
-      for (const color of foundColors) {
-        const actualColor = this.colorMap[color];
-        const deltaE = chroma.deltaE(
-          chroma.lab(givenLAB[0], givenLAB[1], givenLAB[2]),
-          chroma.lab(
-            actualColor.L,
-            actualColor.A,
-            actualColor.B
-          )
-        );
-        if (deltaE <= this.options.deltaEThreshold) {
-          colors.push({
-            ...actualColor,
-            deltaE
-          });
-          if (maxResults && colors.length >= maxResults) {
-            break;
-          }
-        } else {
-          if (fallBackColors.length === 0 || deltaE < fallBackColors[0].deltaE) {
-            fallBackColors = [{
-              ...actualColor,
-              deltaE,
-              isFallback: true
-            }];
-          }
-        }
-      }
-      if (colors.length === 0) {
-        colors = fallBackColors;
-      }
+      ranked.sort((x, y) => x.deltaE - y.deltaE);
+      let colors = ranked.filter((c) => c.deltaE <= this.options.deltaEThreshold);
+      if (maxResults !== void 0 && maxResults > 0) colors = colors.slice(0, maxResults);
+      if (colors.length === 0) colors = [{ ...ranked[0], isFallback: true }];
       const shades = {};
       const altShades = {};
       for (const color of colors) {
         const altShade = color.altShade;
-        if (!(altShade in altShades)) {
-          altShades[altShade] = 0;
-        }
-        altShades[altShade]++;
+        altShades[altShade] = (altShades[altShade] ?? 0) + 1;
         for (const shade of color.shade) {
-          if (!(shade in shades)) {
-            shades[shade] = 0;
-          }
-          shades[shade]++;
+          shades[shade] = (shades[shade] ?? 0) + 1;
         }
       }
-      colors.sort((a, b2) => a.deltaE - b2.deltaE);
       const shadeList = Object.entries(shades);
       shadeList.sort((a, b2) => b2[1] - a[1]);
       const altShadeList = Object.entries(altShades);
       altShadeList.sort((a, b2) => b2[1] - a[1]);
-      const givenHex = givenColor.hex();
-      colors = colors.map((c) => {
-        c.euclideanDistance = chroma.distance(c.hex, givenHex, "rgb");
-        return c;
-      });
-      this.lookupCache.set(cacheKey, {
+      for (const c of colors) {
+        c.euclideanDistance = rgbDistance(c.r, c.g, c.b, r, g, b);
+      }
+      const result = {
         matchedHex: colors[0].hex,
-        givenColor: [r, g, b, givenLAB[0], givenLAB[1], givenLAB[2]],
+        givenColor: [r, g, b, gL, gA, gB],
         colors,
         shades: shadeList,
         altShades: altShadeList
-      });
-      return this.lookupCache.get(cacheKey);
+      };
+      this.lookupCache.set(cacheKey, result);
+      return result;
     }
   };
 
@@ -1414,9 +1444,93 @@
     }
   };
 
+  // src/NearestColorLookup.ts
+  var NearestColorLookup = class {
+    colors;
+    L;
+    A;
+    B;
+    options = {
+      deltaEThreshold: 5
+    };
+    constructor(colorMap, options = {}) {
+      this.colors = Object.values(colorMap);
+      const n = this.colors.length;
+      this.L = new Float64Array(n);
+      this.A = new Float64Array(n);
+      this.B = new Float64Array(n);
+      this.colors.forEach((c, i) => {
+        this.L[i] = c.L;
+        this.A[i] = c.A;
+        this.B[i] = c.B;
+      });
+      this.options = { ...this.options, ...options };
+    }
+    /** accepts anything with an rgb() method, e.g. a chroma-js Color */
+    lookup(color, maxResults = 1) {
+      const [r, g, b] = color.rgb();
+      return this.lookupByRGB(r, g, b, maxResults);
+    }
+    lookupByRGB(r, g, b, maxResults = 1) {
+      r = ~~r;
+      g = ~~g;
+      b = ~~b;
+      const [gL, gA, gB] = rgbToLab(r, g, b);
+      const bestIdx = [];
+      const bestDE = [];
+      const n = this.colors.length;
+      for (let i = 0; i < n; i++) {
+        const dE = deltaE2000(gL, gA, gB, this.L[i], this.A[i], this.B[i]);
+        if (bestDE.length === maxResults && dE >= bestDE[bestDE.length - 1]) continue;
+        let p = bestDE.length;
+        while (p > 0 && bestDE[p - 1] > dE) p--;
+        bestDE.splice(p, 0, dE);
+        bestIdx.splice(p, 0, i);
+        if (bestDE.length > maxResults) {
+          bestDE.pop();
+          bestIdx.pop();
+        }
+      }
+      const colors = bestIdx.map((idx, k) => {
+        const c = this.colors[idx];
+        const result = {
+          ...c,
+          deltaE: bestDE[k],
+          euclideanDistance: rgbDistance(c.r, c.g, c.b, r, g, b)
+        };
+        if (bestDE[k] > this.options.deltaEThreshold) result.isFallback = true;
+        return result;
+      });
+      const shades = {};
+      const altShades = {};
+      for (const c of colors) {
+        for (const s of c.shade) shades[s] = (shades[s] ?? 0) + 1;
+        if (c.altShade !== void 0) altShades[c.altShade] = (altShades[c.altShade] ?? 0) + 1;
+      }
+      const byCount = (x, y) => y[1] - x[1];
+      return {
+        matchedHex: colors[0].hex,
+        givenColor: [r, g, b, gL, gA, gB],
+        colors,
+        shades: Object.entries(shades).sort(byCount),
+        altShades: Object.entries(altShades).sort(byCount)
+      };
+    }
+    /** shade of the exact nearest named color */
+    shadeByRGB(r, g, b) {
+      return this.lookupByRGB(r, g, b, 1).colors[0].shade[0];
+    }
+    static hex(r, g, b) {
+      return rgbToHex(r, g, b);
+    }
+  };
+
   exports.AltShadeLookup = AltShadeLookup_default;
   exports.ColorLookup = ColorLookup;
+  exports.NearestColorLookup = NearestColorLookup;
   exports.ShadeLookup = ShadeLookup;
+  exports.deltaE2000 = deltaE2000;
+  exports.rgbToLab = rgbToLab;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 

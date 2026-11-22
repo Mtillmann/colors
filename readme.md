@@ -21,15 +21,17 @@ In any case you must provide the (included) data to the library class constructo
 
 ## `ColorLookup` - Look up Color Names
 
-This class provides a way to look up color names and shads for any given color. It uses a large generated color map and a cubic lookup data structure to find the closest matching color names and shades. The quality (i.e. likeness) of the matches is measured by the [deltaE](https://en.wikipedia.org/wiki/Color_difference#CIELAB_%CE%94E*).
+This class provides a way to look up color names and shades for any given color. It uses a large generated color map and a cubic lookup data structure to find the closest matching color names and shades. The quality (i.e. likeness) of the matches is measured by the [deltaE](https://en.wikipedia.org/wiki/Color_difference#CIELAB_%CE%94E*) (CIEDE2000).
 
-### `constructor(colorMap: ColorMap, lookupCube: LookupCube)`
+A lookup collects all colors from the 3×3×3 grid cells around the given color (widening the search while no candidate is found), ranks all of them by deltaE and returns the best matches. In a benchmark against an exact brute-force search it finds the closest color for ~95% of inputs and the correct shade for ~99% (see [Benchmark](#benchmark)). Use `NearestColorLookup` if you need guaranteed exact matches.
 
-Creates a new instance of the ColorLookup class.
+### `constructor(lookupCube: LookupCube, colorMap: ColorMap, options = { deltaEThreshold: 5 })`
 
-### `lookup(color: Color, maxResults: number = 1): ColorLookupResult`
+Creates a new instance of the ColorLookup class. `deltaEThreshold` limits which matches are returned; if no color is within the threshold, the single closest candidate is returned with `isFallback: true`.
 
-Looks up the closest matching color names and shades for a given `chroma`-instance (`Color`).
+### `lookup(color: { rgb(): number[] }, maxResults: number = 1): ColorLookupResult`
+
+Looks up the closest matching color names and shades for any object with an `rgb()` method, e.g. a `chroma`-instance (`Color`).
 
 ### `lookupByRGB(r: number, g: number, b: number, maxResults: number = 1): ColorLookupResult`
 
@@ -46,7 +48,7 @@ import { ColorLookup } from "@mtillmann/colors";
 import colorMap from "@mtillmann/colors/dist/data/colorMap.js";
 import lookupCube from "@mtillmann/colors/dist/data/lookupCube.js";
 
-const colorLookup = new ColorLookup(colorMap, lookupCube);
+const colorLookup = new ColorLookup(lookupCube, colorMap);
 
 const color = colorLookup.lookupByRGB(200, 200, 20, 1);
 ```
@@ -104,9 +106,46 @@ The `ColorLookupResult` is the most complex data structure in the library. It co
 }
 ```
 
+## `NearestColorLookup` - Exact Color Lookup
+
+Brute-force variant of `ColorLookup`: every lookup compares the given color against all named colors, so the result is always the true closest match. It needs no lookup cube and no dependencies, but is ~9× slower than `ColorLookup` (still well below a millisecond per lookup). The result has the same shape as `ColorLookupResult`.
+
+### `constructor(colorMap: ColorMap, options = { deltaEThreshold: 5 })`
+
+Creates a new instance. Results with a deltaE above `deltaEThreshold` are marked with `isFallback: true`.
+
+### `lookupByRGB(r: number, g: number, b: number, maxResults: number = 1): ColorLookupResult`
+
+Returns the `maxResults` closest colors, sorted by deltaE.
+
+### `lookup(color: { rgb(): number[] }, maxResults: number = 1): ColorLookupResult`
+
+Same as `lookupByRGB` for any object with an `rgb()` method.
+
+### `shadeByRGB(r: number, g: number, b: number): string`
+
+Returns the shade of the closest color.
+
+### Example
+
+```es6
+import { NearestColorLookup } from "@mtillmann/colors";
+import colorMap from "@mtillmann/colors/dist/data/colorMap.js";
+
+const nearest = new NearestColorLookup(colorMap);
+const result = nearest.lookupByRGB(200, 200, 20, 3); // the 3 closest colors
+```
+
+## Color Math
+
+The library ships its own dependency-free color math, numerically identical to chroma-js:
+
+- `rgbToLab(r, g, b): [L, a, b]` - sRGB (D65) to CIELAB
+- `deltaE2000(L1, a1, b1, L2, a2, b2): number` - CIEDE2000 color difference
+
 ## `ShadeLookup` - Look up Color Shades
 
-`ShadeLookup` is useful if you just want the the color shade of a color or when you need to get the color shades for a large number of colors. It is based on a downsampled binary lookup of the RGB color space and outperforms `ColorLookup` by ~250 times (see `examples/node-esm/benchmark.js`).
+`ShadeLookup` is useful if you just want the the color shade of a color or when you need to get the color shades for a large number of colors. It is based on a downsampled binary lookup of the RGB color space (64 steps per channel, each cell holds the shade of the closest color at the cell's center) and is more than 100 times faster than `ColorLookup`. Because of the downsampling it returns the correct shade for ~95% of inputs (see [Benchmark](#benchmark)).
 
 ### `constructor(binaryLookup: BinaryLookup, byteToShadeOffset: ByteToShadeOffset)`
 
@@ -201,6 +240,17 @@ Run the scripts in the following order:
 3. `node scripts/generate-lookup-cube.js` - generates the lookup cube from the color map
 4. `node scripts/generate-binary-lookup.js` - generates the binary lookup and some metadata from the color map
 5. `npm run build` - run the build again to include the generated data in the dist folder
+
+## Benchmark
+
+`node benchmarks/compare.mjs [count]` (after `npm run build`) compares the lookups against an exact brute-force search on random colors. `benchmarks/original-index.js` is the build of the previous `ColorLookup` implementation, kept as a baseline. Results for 2000 colors:
+
+|                                    | previous `ColorLookup` | `ColorLookup` | `NearestColorLookup` | `ShadeLookup` |
+|------------------------------------|------------------------|---------------|----------------------|---------------|
+| time per lookup                    | ~74 µs                 | ~54 µs        | ~470 µs              | ~0.4 µs       |
+| closest color found                | 56%                    | 95%           | 100%                 | -             |
+| matches more than 1 deltaE off     | 24%                    | 2%            | 0%                   | -             |
+| correct shade                      | 87%                    | 99%           | 100%                 | 95%           |
 
 ## Acknowledgements
 

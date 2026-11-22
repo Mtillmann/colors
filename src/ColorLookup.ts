@@ -1,14 +1,18 @@
-import chroma from 'chroma-js'
-import { type Color } from 'chroma-js'
 import { type ColorMap } from './types/ColorMap'
 import { type LookupCube } from './types/LookupCube'
 import type { SimpleColor } from './types/SimpleColor'
 import type { LookupResult } from './types/LookupResult'
+import { deltaE2000, rgbDistance, rgbToLab } from './colorMath'
 
+/**
+ * Grid-accelerated named color lookup.
+ * The RGB cube is split into cells (lookupCube); a lookup collects the candidates of the
+ * 3x3x3 cells around the given color (widening ring by ring while no candidate is found)
+ * and ranks all of them by CIEDE2000.
+ */
 export default class ColorLookup {
   colorMap: ColorMap
   lookupCube: LookupCube
-  chromaCache = new Map<string, Color>()
   lookupCache = new Map<string, LookupResult>()
   downsampleFactor: number = 0
   options = {
@@ -25,25 +29,25 @@ export default class ColorLookup {
     }
   }
 
-  private cachedChromaByRGB (r: number, g: number, b: number): any {
-    const key = `${r}_${g}_${b}`
-    if (!this.chromaCache.has(key)) {
-      this.chromaCache.set(key, chroma(r, g, b))
-    }
-    return this.chromaCache.get(key)
-  }
-
-  private getClosest (list: LookupCube | any[], index: number, length: number): string[] | any[] {
-    return [
-      list[index],
-      list.slice(0, index).reverse().filter((i: any) => i !== null)[0],
-      list.slice(index + 1, length).filter((i: any) => i !== null)[0]
-    ].filter(i => i !== undefined && i !== null)
-  }
-
-  lookup (color: Color, maxResults?: number): any {
+  /** accepts anything with an rgb() method, e.g. a chroma-js Color */
+  lookup (color: { rgb: () => number[] }, maxResults?: number): any {
     const rgb = color.rgb()
     return this.lookupByRGB(rgb[0], rgb[1], rgb[2], maxResults)
+  }
+
+  /** hex keys of all colors in the cells within `radius` of cell (R, G, B) */
+  private candidates (R: number, G: number, B: number, radius: number): string[] {
+    const size = this.lookupCube.length
+    const found: string[] = []
+    for (let x = Math.max(0, R - radius); x <= Math.min(size - 1, R + radius); x++) {
+      for (let y = Math.max(0, G - radius); y <= Math.min(size - 1, G + radius); y++) {
+        for (let z = Math.max(0, B - radius); z <= Math.min(size - 1, B + radius); z++) {
+          const cell = this.lookupCube[x][y][z]
+          if (cell !== null && cell !== undefined) found.push(...cell)
+        }
+      }
+    }
+    return found
   }
 
   lookupByRGB (r: number, g: number, b: number, maxResults?: number): any {
@@ -52,108 +56,58 @@ export default class ColorLookup {
     b = ~~(b)
 
     const cacheKey: string = `${r}_${g}_${b}`
-
-    if (this.lookupCache.has(cacheKey)) {
-      return this.lookupCache.get(cacheKey)
+    const cached = this.lookupCache.get(cacheKey)
+    if (cached !== undefined) {
+      return cached
     }
 
     const R = Math.floor(r / this.downsampleFactor)
     const G = Math.floor(g / this.downsampleFactor)
     const B = Math.floor(b / this.downsampleFactor)
-    const L = this.lookupCube.length
-    const givenColor = this.cachedChromaByRGB(r, g, b)
-    const givenLAB: number[] = givenColor.lab()
+    const [gL, gA, gB] = rgbToLab(r, g, b)
 
-    const foundColors: string[] = []
-
-    this.getClosest(this.lookupCube, R, L)
-      .forEach((gList: any[]) => {
-        this.getClosest(gList, G, L)
-          .forEach((bList: any[]) => {
-            const values: string[] = this.getClosest(bList, B, L)
-            if (values !== null) {
-              // @ts-expect-error: values always is an array of strings
-              foundColors.push(...[].concat(...values))
-            }
-          })
-      })
-
-    let fallBackColors: SimpleColor[] = []
-    let colors: SimpleColor[] = []
-
-    for (const color of foundColors) {
-      const actualColor = this.colorMap[color]
-      const deltaE = chroma.deltaE(
-        chroma.lab(givenLAB[0], givenLAB[1], givenLAB[2]),
-        chroma.lab(
-          actualColor.L,
-          actualColor.A,
-          actualColor.B
-        ))
-
-      if (deltaE <= this.options.deltaEThreshold) {
-        colors.push({
-          ...actualColor,
-          deltaE
-        })
-
-        if (maxResults && colors.length >= maxResults) {
-          break
-        }
-      } else {
-        if (fallBackColors.length === 0 || deltaE < fallBackColors[0].deltaE!) {
-          fallBackColors = [{
-            ...actualColor,
-            deltaE,
-            isFallback: true
-          }]
-        }
-      }
+    let found: string[] = []
+    for (let radius = 1; found.length === 0 && radius < this.lookupCube.length; radius++) {
+      found = this.candidates(R, G, B, radius)
     }
 
-    if (colors.length === 0) {
-      colors = fallBackColors
-    }
+    // rank every candidate, no early exit
+    const ranked: SimpleColor[] = found.map(hex => {
+      const c = this.colorMap[hex]
+      return { ...c, deltaE: deltaE2000(gL, gA, gB, c.L, c.A, c.B) }
+    })
+    ranked.sort((x, y) => x.deltaE! - y.deltaE!)
+
+    let colors = ranked.filter(c => c.deltaE! <= this.options.deltaEThreshold)
+    if (maxResults !== undefined && maxResults > 0) colors = colors.slice(0, maxResults)
+    if (colors.length === 0) colors = [{ ...ranked[0], isFallback: true }]
 
     const shades: Record<string, number> = {}
     const altShades: Record<string, number> = {}
-
     for (const color of colors) {
       const altShade: string = color.altShade!
-      if (!(altShade in altShades)) {
-        altShades[altShade] = 0
-      }
-      altShades[altShade]++
-
+      altShades[altShade] = (altShades[altShade] ?? 0) + 1
       for (const shade of color.shade) {
-        if (!(shade in shades)) {
-          shades[shade] = 0
-        }
-        shades[shade]++
+        shades[shade] = (shades[shade] ?? 0) + 1
       }
     }
-
-    colors.sort((a, b) => a.deltaE! - b.deltaE!)
     const shadeList = Object.entries(shades)
     shadeList.sort((a, b) => b[1] - a[1])
-
     const altShadeList = Object.entries(altShades)
     altShadeList.sort((a, b) => b[1] - a[1])
 
-    const givenHex: string = givenColor.hex()
-    colors = colors.map((c: SimpleColor) => {
-      c.euclideanDistance = chroma.distance(c.hex, givenHex, 'rgb')
-      return c
-    })
+    for (const c of colors) {
+      c.euclideanDistance = rgbDistance(c.r, c.g, c.b, r, g, b)
+    }
 
-    this.lookupCache.set(cacheKey, {
+    const result: LookupResult = {
       matchedHex: colors[0].hex,
-      givenColor: [r, g, b, givenLAB[0], givenLAB[1], givenLAB[2]],
+      givenColor: [r, g, b, gL, gA, gB],
       colors,
       shades: shadeList,
       altShades: altShadeList
-    })
-
-    return this.lookupCache.get(cacheKey)
+    }
+    this.lookupCache.set(cacheKey, result)
+    return result
   }
 }

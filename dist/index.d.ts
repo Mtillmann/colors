@@ -1,4 +1,4 @@
-import chroma, { Color } from 'chroma-js';
+import { Color } from 'chroma-js';
 
 declare class export_default{
     shadeMap: Record<string, string>;
@@ -38,19 +38,27 @@ interface LookupResult {
     altShades: Array<[string, number]>;
 }
 
+/**
+ * Grid-accelerated named color lookup.
+ * The RGB cube is split into cells (lookupCube); a lookup collects the candidates of the
+ * 3x3x3 cells around the given color (widening ring by ring while no candidate is found)
+ * and ranks all of them by CIEDE2000.
+ */
 declare class ColorLookup {
     colorMap: ColorMap;
     lookupCube: LookupCube;
-    chromaCache: Map<string, chroma.Color>;
     lookupCache: Map<string, LookupResult>;
     downsampleFactor: number;
     options: {
         deltaEThreshold: number;
     };
     constructor(lookupCube: LookupCube, colorMap: ColorMap, options?: {});
-    private cachedChromaByRGB;
-    private getClosest;
-    lookup(color: Color, maxResults?: number): any;
+    /** accepts anything with an rgb() method, e.g. a chroma-js Color */
+    lookup(color: {
+        rgb: () => number[];
+    }, maxResults?: number): any;
+    /** hex keys of all colors in the cells within `radius` of cell (R, G, B) */
+    private candidates;
     lookupByRGB(r: number, g: number, b: number, maxResults?: number): any;
 }
 
@@ -66,4 +74,32 @@ declare class ShadeLookup {
     shadesByRGB(r: number, g: number, b: number, searchCubeEdgeLength?: number): Array<[string, number]>;
 }
 
-export { export_default as AltShadeLookup, ColorLookup, ShadeLookup };
+/**
+ * Exact nearest named color lookup without dependencies.
+ * Compares the given color against every entry of the color map (brute force),
+ * so the result is always the true closest match by CIEDE2000.
+ */
+declare class NearestColorLookup {
+    colors: SimpleColor[];
+    private readonly L;
+    private readonly A;
+    private readonly B;
+    options: {
+        deltaEThreshold: number;
+    };
+    constructor(colorMap: ColorMap, options?: {});
+    /** accepts anything with an rgb() method, e.g. a chroma-js Color */
+    lookup(color: {
+        rgb: () => number[];
+    }, maxResults?: number): LookupResult;
+    lookupByRGB(r: number, g: number, b: number, maxResults?: number): LookupResult;
+    /** shade of the exact nearest named color */
+    shadeByRGB(r: number, g: number, b: number): string;
+    static hex(r: number, g: number, b: number): string;
+}
+
+declare function rgbToLab(r: number, g: number, b: number): [number, number, number];
+/** CIEDE2000 (Kl = Kc = Kh = 1), same formulation as chroma.deltaE */
+declare function deltaE2000(L1: number, a1: number, b1: number, L2: number, a2: number, b2: number): number;
+
+export { export_default as AltShadeLookup, ColorLookup, NearestColorLookup, ShadeLookup, deltaE2000, rgbToLab };
