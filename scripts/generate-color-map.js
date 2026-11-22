@@ -78,6 +78,51 @@ for (const hex in output) {
 }
 
 
+// infer the base shade (e.g. "Blue") of colors without a human shade label from the
+// closest labelled colors. This must run BEFORE the light/dark step below, otherwise
+// inferred colors would copy their neighbour's "Light"/"Dark" prefix instead of
+// getting one from their own lightness.
+const deltaEThreshold = 50;
+
+for (const hex in output) {
+    if (!('shade' in output[hex])) {
+        for (const hex2 in output) {
+            if (!('shade' in output[hex2])) {
+                continue;
+            }
+            const deltaE = chroma.deltaE(hex, hex2);
+            if (deltaE > deltaEThreshold) {
+                continue;
+            }
+
+            if (!('deltaes' in output[hex])) {
+                output[hex].deltaes = {};
+            }
+
+
+            const shade = output[hex2].shade[0];
+            if (shade in output[hex].deltaes) {
+                output[hex].deltaes[shade] = Math.min(output[hex].deltaes[shade], deltaE);
+            } else {
+                output[hex].deltaes[shade] = deltaE;
+            }
+        }
+    }
+}
+
+for (const hex in output) {
+    if (!('shade' in output[hex])) {
+
+        let shades = Object.entries(output[hex].deltaes);
+        shades.sort((a, b) => a[1] - b[1])
+
+        output[hex].shade = [shades[0][0]];
+        output[hex].inferredShade = true;
+        delete output[hex].deltaes;
+
+    }
+}
+
 const shadeBrightness = {},
     systemToUse = 'hsl',
     systemBrightnessIndex = 2,
@@ -85,7 +130,8 @@ const shadeBrightness = {},
 
 for (const hex in output) {
     const color = output[hex];
-    if (!('shade' in color)) {
+    // light/dark ranges come from human-labelled colors only
+    if (!('shade' in color) || color.inferredShade) {
         continue;
     }
 
@@ -143,6 +189,7 @@ for (let hex in output) {
     });
 
     output[hex].shade = newShades;
+    delete output[hex].inferredShade;
 }
 
 
@@ -166,46 +213,6 @@ for (const hex in output) {
         if (oldLength !== output[hex].shade.length) {
             //console.log({oldLength, newLength : output[hex].shade.length, shadees : output[hex].shade});
         }
-    }
-}
-
-const deltaEThreshold = 50;
-
-for (const hex in output) {
-    if (!('shade' in output[hex])) {
-        for (const hex2 in output) {
-            if (!('shade' in output[hex2])) {
-                continue;
-            }
-            const deltaE = chroma.deltaE(hex, hex2);
-            if (deltaE > deltaEThreshold) {
-                continue;
-            }
-
-            if (!('deltaes' in output[hex])) {
-                output[hex].deltaes = {};
-            }
-
-
-            const shade = output[hex2].shade[0];
-            if (shade in output[hex].deltaes) {
-                output[hex].deltaes[shade] = Math.min(output[hex].deltaes[shade], deltaE);
-            } else {
-                output[hex].deltaes[shade] = deltaE;
-            }
-        }
-    }
-}
-
-for (const hex in output) {
-    if (!('shade' in output[hex])) {
-
-        let shades = Object.entries(output[hex].deltaes);
-        shades.sort((a, b) => a[1] - b[1])
-
-        output[hex].shade = [shades[0][0]];
-        delete output[hex].deltaes;
-
     }
 }
 
