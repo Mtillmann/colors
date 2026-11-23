@@ -1,8 +1,12 @@
 ![tests](https://github.com/Mtillmann/chapters/actions/workflows/tests.yaml/badge.svg?event=push) 
 
-# Colors
+# Colors – what color is this?
 
-Library to look up color names and shades
+Turn any RGB value into a color name and the plain shade people would call it: up to 5,387 named colors, 14 shades, no runtime dependencies.
+
+<p align="center"><img src="visualizers/images/shade-banner-extended.svg" alt="The 14 shades as discs, sized by their share of the perceptual color space, with the number of colors per shade (extended dataset)"></p>
+
+More visualizations of the shades and color names (both datasets) are in [`visualizers/images`](visualizers/images).
 
 ## Installation
 
@@ -50,6 +54,18 @@ All other colors (435 in the native, ~4700 in the extended dataset) get an infer
 The human labels are clustered in some parts of the color space (for random colors the closest label is more than deltaE 5 away in ~21% of cases), while the survey covers every region of the RGB cube. Blending both keeps the agreement with the Wikipedia labels (~85%) and raises the agreement with what people actually call a color from ~68% to ~83% (measured against a held-out half of the survey participants).
 
 If the runner-up shade reaches 70% of the winner's score, it is added as a second shade (`shade: ["Pink", "Magenta"]`), because people genuinely disagree there: in ~29% of the color space less than 60% of the survey participants used the same shade. "Light"/"Dark" prefixes are derived from each color's own lightness.
+
+### Why the shades are English only
+
+The shades are not just words that could be translated: each one is a region of the color space, and where one shade ends and the next begins was learned from English speakers (Wikipedia labels and the xkcd survey). Languages divide the color space differently, so a translated label would sit on an English boundary.
+
+- Russian has two basic words for blue, *goluboy* (light blue) and *siniy* (dark blue): two shades where English has one
+- Japanese *ao* traditionally includes some greens (a green traffic light is *ao*)
+- Hungarian has two basic reds, *piros* and *vörös*
+- German has no real difference between Violet and Purple (both *Lila*/*Violett*), says *Türkis* for Cyan and splits Pink and Magenta differently
+- many languages have no basic word for Cyan or Magenta at all
+
+Even a language as close as German would need shades to be merged, renamed or split, and the result would be guesswork. Doing it properly needs naming data from native speakers of each language, comparable to the xkcd survey. The World Color Survey covers 110 languages, but mostly small, unwritten ones, not the languages this library would be translated into. Until such data exists, the shades stay English: they reflect how English speakers name colors.
 
 ## `ColorLookup` - Look up Color Names
 
@@ -277,6 +293,15 @@ Run the scripts in the following order:
 For the extended dataset run `node scripts/import-color-name-list.js path/to/colornames.csv` once, then steps 2-5 with `DATASET=extended` set.
 
 `sources/xkcd-survey-shades.json` (survey votes per RGB cell) is used by step 2 for the shade inference. It is generated from the raw xkcd survey dump (not included, ~300 MB) with the Python scripts in `scripts/survey/` (standard library only): `load_dump.py` imports the dump into SQLite, `distill.py` maps the answers to shades and counts them per cell, `compare.py` compares the dataset's shades with the survey.
+
+### Visualizations
+
+The images in [`visualizers/images`](visualizers/images) are generated with `npm run build && node visualizers/render-all.js` (or one script from `visualizers/` at a time, no dependencies):
+
+- `shade-banner` - one disc per shade, sized by its share of the perceptual (CIELAB) color space, with the number of colors per shade
+- `shade-discs` - the same, sized by share of the RGB cube
+- `shade-map-square` / `shade-map-wheel` / `shade-wheel-radial` - slices of the color space with the shade regions labelled
+- `color-names-square` - every named color as a dot over the shade borders
 
 ## Benchmark
 
